@@ -1,0 +1,976 @@
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%
+	String path = request.getContextPath();
+	//out.print(path);
+%>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="zh-cn">
+  <head>
+  <!-- Meta, title, CSS, favicons, etc. -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="特产网特产频道">
+  <meta name="keywords" content="特产,绿色食品,健康食品,农产品">
+  <meta name="author" content="www.bootcss.com>">
+
+  <title>特产网 - 特产频道</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="http://job.bootcss.com/assets/css/app.min.css" rel="stylesheet">
+  <link href="http://cdn.bootcss.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon-precomposed" href="http://job.bootcss.com/assets/ico/apple-touch-icon-precomposed.png">
+  <link rel="icon" href="http://job.bootcss.com/assets/ico/favicon.ico">
+
+  <script>
+    var _hmt = _hmt || [];
+  </script>
+
+</head>
+<body>
+
+<div id="navbar-top" class="navbar-top navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <a href="<%=path %>/" class="navbar-brand">首页</a>
+      <!-- <img src="http://job.bootcss.com/assets/img/bl.png"> -->
+    </div>
+    <p class="navbar-text navbar-right co-brand hidden-xs">
+    <!-- <img src="http://job.bootcss.com/assets/img/liepin-logo.png"> -->
+    <a href="<%=path %>/member/login.htm" class="navbar-brand">登录</a>
+    <a href="<%=path %>/member/signup.htm" class="navbar-brand">免费注册</a>
+    </p>
+  </div>
+</div>
+
+<header id="top-header" class="top-header jumbotron" style="background-image: url(http://job.bootcss.com/assets/img/ballon.jpg);">
+  <div class="container">
+  	<div class="row">
+  		<div class="col-md-8">
+		  	<div class="page-header">
+			    <h1>特产/绿色食品</h1>
+			    <p class="lead">健康食品都在这里啦！</p>
+		  	</div>
+		  	<!-- <div class="features media">
+		  		<h5 class="media-left">快捷入口：</h5>
+		  		<div class="media-body">
+		        <p class="coms">
+		    			<a target="_blank" href="http://company.liepin.com/1072424?mscid=b_o_0001" class="label label-default label-ali" onclick="_hmt.push(['_trackEvent', 'coms', 'click', '阿里'])">阿里</a>
+		    			<a href="/company/腾讯" class="label label-default label-tencent" onclick="_hmt.push(['_trackEvent', 'coms', 'click', '腾讯'])">腾讯</a>
+		    			<a target="_blank" href="http://company.liepin.com/884492?mscid=b_o_0001" class="label label-default label-baidu" onclick="_hmt.push(['_trackEvent', 'coms', 'click', '百度'])">百度</a>
+		    			<a target="_blank" href="http://company.liepin.com/3264402?mscid=b_o_0001" class="label label-default label-sina" onclick="_hmt.push(['_trackEvent', 'coms', 'click', '金山'])">金山</a>
+		    			<a target="_blank" href="http://company.liepin.com/856639?mscid=b_o_0001" class="label label-default label-sohu" onclick="_hmt.push(['_trackEvent', 'coms', 'click', '迅雷'])">迅雷</a>
+		    			<a target="_blank" href="http://company.liepin.com/6429309?mscid=b_o_0001" class="label label-default label-360" onclick="_hmt.push(['_trackEvent', 'coms', 'click', '360'])">360</a>
+		          		<a href="/company/小米" class="label label-default label-xiaomi" onclick="_hmt.push(['_trackEvent', 'coms', 'click', '小米'])">小米</a>
+		          		<a target="_blank" href="http://company.liepin.com/947003?mscid=b_o_0001" class="label label-default label-lenovo" onclick="_hmt.push(['_trackEvent', 'coms', 'click', '畅游'])">畅游</a>
+		        </p>
+		        <p class="salary">
+		          <a href="/salary/10" class="label label-default" onclick="_hmt.push(['_trackEvent', 'salary', 'click', '10万起'])">10万起</a>
+		          <a href="/salary/20" class="label label-default" onclick="_hmt.push(['_trackEvent', 'salary', 'click', '20万起'])">20万起</a>
+		          <a href="/salary/30" class="label label-default" onclick="_hmt.push(['_trackEvent', 'salary', 'click', '30万起'])">30万起</a>
+		          <a href="/salary/50" class="label label-default" onclick="_hmt.push(['_trackEvent', 'salary', 'click', '50万起'])">50万起</a>
+		          <a href="/salary/土豪" class="label label-default" onclick="_hmt.push(['_trackEvent', 'salary', 'click', '土豪'])">土豪</a>
+		        </p>
+		  		</div>
+		  	</div>
+		  	 -->
+	  	</div>
+  	</div>
+  </div>
+</header>
+<!-- <section class="newest-jobs container">
+  <div class="page-header">
+    <h3>最新 
+    <small class="select-region pull-right">区域：
+      <a href="/" onclick="_hmt.push(['_trackEvent', 'region', 'click', '全部'])">[全部]</a>
+      <a href="/city/北京" onclick="_hmt.push(['_trackEvent', 'region', 'click', '北京'])">北京</a>
+      <a href="/city/上海" onclick="_hmt.push(['_trackEvent', 'region', 'click', '广州'])">上海</a><a href="/city/广州">广州</a>
+      <a href="/city/深圳" onclick="_hmt.push(['_trackEvent', 'region', 'click', '成都'])">深圳</a><a href="/city/成都">成都</a>
+      <a href="/city/南京" onclick="_hmt.push(['_trackEvent', 'region', 'click', '杭州'])">南京</a><a href="/city/杭州">杭州</a>
+     <div class="dropdown">
+      <a class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+        其他
+        <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="/city/重庆"  onclick="_hmt.push(['_trackEvent', 'region', 'click', '重庆'])">重庆</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="/city/天津"  onclick="_hmt.push(['_trackEvent', 'region', 'click', '天津'])">天津</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="/city/大连"  onclick="_hmt.push(['_trackEvent', 'region', 'click', '大连'])">大连</a></li>
+      </ul>
+    </div>
+    </small>
+  </h3>
+	
+  </div>
+</section> -->
+
+<section class="job-list">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-sm-6 col-md-4">
+        <a href="http://job.liepin.com/338_3385883?mscid=b_o_0001" class="job-item-wrap" title="UI设计师" target="_blank"  onclick="_hmt.push(['_trackEvent', 'jobs', 'click', 'UI设计师-泰国-http://job.liepin.com/338_3385883?mscid=b_o_0001'])">
+          <div class="job-item">
+            <div class="job-source light-green">
+              <img class="img-responsive" src="http://gm0.lietou-static.com/user/pic_logo/big/default_e.gif">
+            </div>
+            <div class="job-company">广州诺才企业管理咨询有限公司</div>
+            <div class="job-title">UI设计师</div>
+            <div class="job-salary">年薪：9-10万</div>
+            <div class="job-comments">
+              <p>
+                  <span class="label label-default">发展空间大</span>
+                  <span class="label label-default">扁平管理</span>
+                  <span class="label label-default">公司规模大</span>
+                  <span class="label label-default">带薪年假</span>
+                  <span class="label label-default">节日礼物</span>
+                  <span class="label label-default">免费班车</span>
+              </p>
+            </div>
+            <div class="job-meta">
+              <span class="job-location">[泰国]</span><span class="job-publish-time">11天前</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <a href="http://job.liepin.com/338_3385776?mscid=b_o_0001" class="job-item-wrap" title="数据产品经理（大数据创新中心）" target="_blank"  onclick="_hmt.push(['_trackEvent', 'jobs', 'click', '数据产品经理（大数据创新中心）-北京-http://job.liepin.com/338_3385776?mscid=b_o_0001'])">
+          <div class="job-item">
+            <div class="job-source light-green">
+              <img class="img-responsive" src="http://gm0.lietou-static.com/user/pic_logo/big/54d1e9be712e7147fd81287901a.png">
+            </div>
+            <div class="job-company">普信恒业科技发展(北京)有限公司</div>
+            <div class="job-title">数据产品经理（大数据创新中心）</div>
+            <div class="job-salary">年薪：30-45万</div>
+            <div class="job-comments">
+              <p>
+                  <span class="label label-default">岗位晋升</span>
+                  <span class="label label-default">年底双薪</span>
+                  <span class="label label-default">带薪年假</span>
+                  <span class="label label-default">弹性工作</span>
+                  <span class="label label-default">六险一金</span>
+                  <span class="label label-default">扁平管理</span>
+              </p>
+            </div>
+            <div class="job-meta">
+              <span class="job-location">[北京]</span><span class="job-publish-time">11天前</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <a href="http://job.liepin.com/338_3385750?mscid=b_o_0001" class="job-item-wrap" title="薪酬主管" target="_blank"  onclick="_hmt.push(['_trackEvent', 'jobs', 'click', '薪酬主管-上海-http://job.liepin.com/338_3385750?mscid=b_o_0001'])">
+          <div class="job-item">
+            <div class="job-source light-green">
+              <img class="img-responsive" src="http://gm0.lietou-static.com/user/pic_logo/big/54d1ec1e712eb4f6b84ee33601a.png">
+            </div>
+            <div class="job-company">春秋航空股份有限公司</div>
+            <div class="job-title">薪酬主管</div>
+            <div class="job-salary">年薪：10-15万</div>
+            <div class="job-comments">
+              <p>
+                  <span class="label label-default">交通补助</span>
+                  <span class="label label-default">午餐补助</span>
+                  <span class="label label-default">带薪年假</span>
+                  <span class="label label-default">领导好</span>
+                  <span class="label label-default">绩效奖金</span>
+                  <span class="label label-default">专业性强</span>
+              </p>
+            </div>
+            <div class="job-meta">
+              <span class="job-location">[上海]</span><span class="job-publish-time">11天前</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <a href="http://job.liepin.com/338_3385712?mscid=b_o_0001" class="job-item-wrap" title="设计经理" target="_blank"  onclick="_hmt.push(['_trackEvent', 'jobs', 'click', '设计经理-重庆-http://job.liepin.com/338_3385712?mscid=b_o_0001'])">
+          <div class="job-item">
+            <div class="job-source light-green">
+              <img class="img-responsive" src="http://gm0.lietou-static.com/user/pic_logo/big/54d1ebdf712eb4f6b84eb64501a.png">
+            </div>
+            <div class="job-company">靠谱科技股份有限公司</div>
+            <div class="job-title">设计经理</div>
+            <div class="job-salary">年薪：15-30万</div>
+            <div class="job-comments">
+              <p>
+                  <span class="label label-default">生育补贴</span>
+                  <span class="label label-default">车辆津贴</span>
+                  <span class="label label-default">免费班车</span>
+                  <span class="label label-default">午餐补助</span>
+                  <span class="label label-default">岗位晋升</span>
+                  <span class="label label-default">交通补助</span>
+              </p>
+            </div>
+            <div class="job-meta">
+              <span class="job-location">[重庆]</span><span class="job-publish-time">11天前</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <a href="http://job.liepin.com/338_3385711?mscid=b_o_0001" class="job-item-wrap" title="移动端 测试工程师" target="_blank"  onclick="_hmt.push(['_trackEvent', 'jobs', 'click', '移动端 测试工程师-杭州-http://job.liepin.com/338_3385711?mscid=b_o_0001'])">
+          <div class="job-item">
+            <div class="job-source light-green">
+              <img class="img-responsive" src="http://gm0.lietou-static.com/user/pic_logo/big/54d1ea78712eb4f6b84dade302c.jpg">
+            </div>
+            <div class="job-company">杭州亿方云网络科技有限公司</div>
+            <div class="job-title">移动端 测试工程师</div>
+            <div class="job-salary">年薪：10-15万</div>
+            <div class="job-comments">
+              <p>
+                  <span class="label label-default">午餐补助</span>
+                  <span class="label label-default">岗位晋升</span>
+                  <span class="label label-default">五险一金</span>
+                  <span class="label label-default">定期体检</span>
+                  <span class="label label-default">节日礼物</span>
+                  <span class="label label-default">年度旅游</span>
+              </p>
+            </div>
+            <div class="job-meta">
+              <span class="job-location">[杭州]</span><span class="job-publish-time">11天前</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <a href="http://job.liepin.com/338_3385406?mscid=b_o_0001" class="job-item-wrap" title=".net开发工程师" target="_blank"  onclick="_hmt.push(['_trackEvent', 'jobs', 'click', '.net开发工程师-济南-http://job.liepin.com/338_3385406?mscid=b_o_0001'])">
+          <div class="job-item">
+            <div class="job-source light-green">
+              <img class="img-responsive" src="http://gm0.lietou-static.com/user/pic_logo/big/54d1ea83712eb4f6b84db85401a.png">
+            </div>
+            <div class="job-company">山东山大华天软件有限公司</div>
+            <div class="job-title">.net开发工程师</div>
+            <div class="job-salary">年薪：8-10万</div>
+            <div class="job-comments">
+              <p>
+                  <span class="label label-default">交通补助</span>
+                  <span class="label label-default">午餐补助</span>
+                  <span class="label label-default">优秀员工奖</span>
+                  <span class="label label-default">带薪年假</span>
+                  <span class="label label-default">节日礼物</span>
+                  <span class="label label-default">公司规模大</span>
+              </p>
+            </div>
+            <div class="job-meta">
+              <span class="job-location">[济南]</span><span class="job-publish-time">11天前</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <a href="http://job.liepin.com/338_3385113?mscid=b_o_0001" class="job-item-wrap" title="高级APP产品经理（android/ios）" target="_blank"  onclick="_hmt.push(['_trackEvent', 'jobs', 'click', '高级APP产品经理（android/ios）-北京-http://job.liepin.com/338_3385113?mscid=b_o_0001'])">
+          <div class="job-item">
+            <div class="job-source light-green">
+              <img class="img-responsive" src="http://gm0.lietou-static.com/user/pic_logo/big/54d314e5a3106caffec117b002c.png">
+            </div>
+            <div class="job-company">梦响强音文化传播(上海)有限公司</div>
+            <div class="job-title">高级APP产品经理（android/ios）</div>
+            <div class="job-salary">年薪：15-40万</div>
+            <div class="job-comments">
+              <p>
+                  <span class="label label-default">带薪年假</span>
+                  <span class="label label-default">子女福利</span>
+                  <span class="label label-default">上市公司</span>
+                  <span class="label label-default">领导好</span>
+                  <span class="label label-default">交通补助</span>
+                  <span class="label label-default">年度旅游</span>
+              </p>
+            </div>
+            <div class="job-meta">
+              <span class="job-location">[北京]</span><span class="job-publish-time">12天前</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <a href="http://job.liepin.com/338_3385112?mscid=b_o_0001" class="job-item-wrap" title="艺术设计总监" target="_blank"  onclick="_hmt.push(['_trackEvent', 'jobs', 'click', '艺术设计总监-北京-http://job.liepin.com/338_3385112?mscid=b_o_0001'])">
+          <div class="job-item">
+            <div class="job-source light-green">
+              <img class="img-responsive" src="http://gm0.lietou-static.com/user/pic_logo/big/54d314e5a3106caffec117b002c.png">
+            </div>
+            <div class="job-company">梦响强音文化传播(上海)有限公司</div>
+            <div class="job-title">艺术设计总监</div>
+            <div class="job-salary">年薪：20-40万</div>
+            <div class="job-comments">
+              <p>
+                  <span class="label label-default">领导好</span>
+                  <span class="label label-default">带薪年假</span>
+                  <span class="label label-default">年底双薪</span>
+                  <span class="label label-default">团队聚餐</span>
+                  <span class="label label-default">弹性工作</span>
+                  <span class="label label-default">节日礼物</span>
+              </p>
+            </div>
+            <div class="job-meta">
+              <span class="job-location">[北京]</span><span class="job-publish-time">12天前</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <a href="http://job.liepin.com/338_3385111?mscid=b_o_0001" class="job-item-wrap" title="产品总监" target="_blank"  onclick="_hmt.push(['_trackEvent', 'jobs', 'click', '产品总监-北京-http://job.liepin.com/338_3385111?mscid=b_o_0001'])">
+          <div class="job-item">
+            <div class="job-source light-green">
+              <img class="img-responsive" src="http://gm0.lietou-static.com/user/pic_logo/big/54d314e5a3106caffec117b002c.png">
+            </div>
+            <div class="job-company">梦响强音文化传播(上海)有限公司</div>
+            <div class="job-title">产品总监</div>
+            <div class="job-salary">年薪：20-40万</div>
+            <div class="job-comments">
+              <p>
+                  <span class="label label-default">团队聚餐</span>
+                  <span class="label label-default">子女福利</span>
+                  <span class="label label-default">扁平管理</span>
+                  <span class="label label-default">节日礼物</span>
+                  <span class="label label-default">弹性工作</span>
+                  <span class="label label-default">通讯津贴</span>
+              </p>
+            </div>
+            <div class="job-meta">
+              <span class="job-location">[北京]</span><span class="job-publish-time">12天前</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <a href="http://job.liepin.com/338_3385105?mscid=b_o_0001" class="job-item-wrap" title="测试经理" target="_blank"  onclick="_hmt.push(['_trackEvent', 'jobs', 'click', '测试经理-北京-http://job.liepin.com/338_3385105?mscid=b_o_0001'])">
+          <div class="job-item">
+            <div class="job-source light-green">
+              <img class="img-responsive" src="http://gm0.lietou-static.com/user/pic_logo/big/54d314e5a3106caffec117b002c.png">
+            </div>
+            <div class="job-company">梦响强音文化传播(上海)有限公司</div>
+            <div class="job-title">测试经理</div>
+            <div class="job-salary">年薪：15-30万</div>
+            <div class="job-comments">
+              <p>
+                  <span class="label label-default">节日礼物</span>
+                  <span class="label label-default">弹性工作</span>
+                  <span class="label label-default">五险一金</span>
+                  <span class="label label-default">岗位晋升</span>
+                  <span class="label label-default">管理规范</span>
+                  <span class="label label-default">年底双薪</span>
+              </p>
+            </div>
+            <div class="job-meta">
+              <span class="job-location">[北京]</span><span class="job-publish-time">12天前</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <a href="http://job.liepin.com/338_3385103?mscid=b_o_0001" class="job-item-wrap" title="技术支持经理" target="_blank"  onclick="_hmt.push(['_trackEvent', 'jobs', 'click', '技术支持经理-北京-http://job.liepin.com/338_3385103?mscid=b_o_0001'])">
+          <div class="job-item">
+            <div class="job-source light-green">
+              <img class="img-responsive" src="http://gm0.lietou-static.com/user/pic_logo/big/54d314e5a3106caffec117b002c.png">
+            </div>
+            <div class="job-company">梦响强音文化传播(上海)有限公司</div>
+            <div class="job-title">技术支持经理</div>
+            <div class="job-salary">年薪：15-30万</div>
+            <div class="job-comments">
+              <p>
+                  <span class="label label-default">年度旅游</span>
+                  <span class="label label-default">上市公司</span>
+                  <span class="label label-default">通讯津贴</span>
+                  <span class="label label-default">岗位晋升</span>
+                  <span class="label label-default">交通补助</span>
+                  <span class="label label-default">五险一金</span>
+              </p>
+            </div>
+            <div class="job-meta">
+              <span class="job-location">[北京]</span><span class="job-publish-time">12天前</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <a href="http://job.liepin.com/338_3385102?mscid=b_o_0001" class="job-item-wrap" title="高级数据库工程师" target="_blank"  onclick="_hmt.push(['_trackEvent', 'jobs', 'click', '高级数据库工程师-北京-http://job.liepin.com/338_3385102?mscid=b_o_0001'])">
+          <div class="job-item">
+            <div class="job-source light-green">
+              <img class="img-responsive" src="http://gm0.lietou-static.com/user/pic_logo/big/54d314e5a3106caffec117b002c.png">
+            </div>
+            <div class="job-company">梦响强音文化传播(上海)有限公司</div>
+            <div class="job-title">高级数据库工程师</div>
+            <div class="job-salary">年薪：15-30万</div>
+            <div class="job-comments">
+              <p>
+                  <span class="label label-default">通讯津贴</span>
+                  <span class="label label-default">节日礼物</span>
+                  <span class="label label-default">五险一金</span>
+                  <span class="label label-default">年底双薪</span>
+                  <span class="label label-default">带薪年假</span>
+                  <span class="label label-default">管理规范</span>
+              </p>
+            </div>
+            <div class="job-meta">
+              <span class="job-location">[北京]</span><span class="job-publish-time">12天前</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <a href="http://job.liepin.com/338_3385100?mscid=b_o_0001" class="job-item-wrap" title="高级运维工程师" target="_blank"  onclick="_hmt.push(['_trackEvent', 'jobs', 'click', '高级运维工程师-北京-http://job.liepin.com/338_3385100?mscid=b_o_0001'])">
+          <div class="job-item">
+            <div class="job-source light-green">
+              <img class="img-responsive" src="http://gm0.lietou-static.com/user/pic_logo/big/54d314e5a3106caffec117b002c.png">
+            </div>
+            <div class="job-company">梦响强音文化传播(上海)有限公司</div>
+            <div class="job-title">高级运维工程师</div>
+            <div class="job-salary">年薪：12-30万</div>
+            <div class="job-comments">
+              <p>
+                  <span class="label label-default">带薪年假</span>
+                  <span class="label label-default">通讯津贴</span>
+                  <span class="label label-default">年度旅游</span>
+                  <span class="label label-default">扁平管理</span>
+                  <span class="label label-default">股票期权</span>
+                  <span class="label label-default">弹性工作</span>
+              </p>
+            </div>
+            <div class="job-meta">
+              <span class="job-location">[北京]</span><span class="job-publish-time">12天前</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <a href="http://job.liepin.com/338_3385099?mscid=b_o_0001" class="job-item-wrap" title="高级flash开发工程师" target="_blank"  onclick="_hmt.push(['_trackEvent', 'jobs', 'click', '高级flash开发工程师-北京-http://job.liepin.com/338_3385099?mscid=b_o_0001'])">
+          <div class="job-item">
+            <div class="job-source light-green">
+              <img class="img-responsive" src="http://gm0.lietou-static.com/user/pic_logo/big/54d314e5a3106caffec117b002c.png">
+            </div>
+            <div class="job-company">梦响强音文化传播(上海)有限公司</div>
+            <div class="job-title">高级flash开发工程师</div>
+            <div class="job-salary">年薪：15-30万</div>
+            <div class="job-comments">
+              <p>
+                  <span class="label label-default">领导好</span>
+                  <span class="label label-default">通讯津贴</span>
+                  <span class="label label-default">年底双薪</span>
+                  <span class="label label-default">弹性工作</span>
+                  <span class="label label-default">五险一金</span>
+                  <span class="label label-default">节日礼物</span>
+              </p>
+            </div>
+            <div class="job-meta">
+              <span class="job-location">[北京]</span><span class="job-publish-time">12天前</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <a href="http://job.liepin.com/338_3385097?mscid=b_o_0001" class="job-item-wrap" title="高级ios开发经理" target="_blank"  onclick="_hmt.push(['_trackEvent', 'jobs', 'click', '高级ios开发经理-北京-http://job.liepin.com/338_3385097?mscid=b_o_0001'])">
+          <div class="job-item">
+            <div class="job-source light-green">
+              <img class="img-responsive" src="http://gm0.lietou-static.com/user/pic_logo/big/54d314e5a3106caffec117b002c.png">
+            </div>
+            <div class="job-company">梦响强音文化传播(上海)有限公司</div>
+            <div class="job-title">高级ios开发经理</div>
+            <div class="job-salary">年薪：20-40万</div>
+            <div class="job-comments">
+              <p>
+                  <span class="label label-default">通讯津贴</span>
+                  <span class="label label-default">管理规范</span>
+                  <span class="label label-default">岗位晋升</span>
+                  <span class="label label-default">五险一金</span>
+                  <span class="label label-default">股票期权</span>
+                  <span class="label label-default">年度旅游</span>
+              </p>
+            </div>
+            <div class="job-meta">
+              <span class="job-location">[北京]</span><span class="job-publish-time">12天前</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <a href="http://job.liepin.com/338_3385096?mscid=b_o_0001" class="job-item-wrap" title="高级android开发经理" target="_blank"  onclick="_hmt.push(['_trackEvent', 'jobs', 'click', '高级android开发经理-北京-http://job.liepin.com/338_3385096?mscid=b_o_0001'])">
+          <div class="job-item">
+            <div class="job-source light-green">
+              <img class="img-responsive" src="http://gm0.lietou-static.com/user/pic_logo/big/54d314e5a3106caffec117b002c.png">
+            </div>
+            <div class="job-company">梦响强音文化传播(上海)有限公司</div>
+            <div class="job-title">高级android开发经理</div>
+            <div class="job-salary">年薪：20-40万</div>
+            <div class="job-comments">
+              <p>
+                  <span class="label label-default">领导好</span>
+                  <span class="label label-default">团队聚餐</span>
+                  <span class="label label-default">股票期权</span>
+                  <span class="label label-default">交通补助</span>
+                  <span class="label label-default">五险一金</span>
+                  <span class="label label-default">节日礼物</span>
+              </p>
+            </div>
+            <div class="job-meta">
+              <span class="job-location">[北京]</span><span class="job-publish-time">12天前</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <a href="http://job.liepin.com/338_3385093?mscid=b_o_0001" class="job-item-wrap" title="高级C/C++开发经理（音视频流媒体方向）" target="_blank"  onclick="_hmt.push(['_trackEvent', 'jobs', 'click', '高级C/C++开发经理（音视频流媒体方向）-北京-http://job.liepin.com/338_3385093?mscid=b_o_0001'])">
+          <div class="job-item">
+            <div class="job-source light-green">
+              <img class="img-responsive" src="http://gm0.lietou-static.com/user/pic_logo/big/54d314e5a3106caffec117b002c.png">
+            </div>
+            <div class="job-company">梦响强音文化传播(上海)有限公司</div>
+            <div class="job-title">高级C/C++开发经理（音视频流媒体方向）</div>
+            <div class="job-salary">年薪：20-40万</div>
+            <div class="job-comments">
+              <p>
+                  <span class="label label-default">弹性工作</span>
+                  <span class="label label-default">交通补助</span>
+                  <span class="label label-default">年底双薪</span>
+                  <span class="label label-default">带薪年假</span>
+                  <span class="label label-default">管理规范</span>
+                  <span class="label label-default">岗位晋升</span>
+              </p>
+            </div>
+            <div class="job-meta">
+              <span class="job-location">[北京]</span><span class="job-publish-time">12天前</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <a href="http://job.liepin.com/338_3385045?mscid=b_o_0001" class="job-item-wrap" title="技术总监（APP方向）" target="_blank"  onclick="_hmt.push(['_trackEvent', 'jobs', 'click', '技术总监（APP方向）-广州-http://job.liepin.com/338_3385045?mscid=b_o_0001'])">
+          <div class="job-item">
+            <div class="job-source light-green">
+              <img class="img-responsive" src="http://gm0.lietou-static.com/user/pic_logo/big/54d471bda3102363e3b9b83c02c.png">
+            </div>
+            <div class="job-company">广州天赐企业管理咨询有限公司</div>
+            <div class="job-title">技术总监（APP方向）</div>
+            <div class="job-salary">年薪：18-30万</div>
+            <div class="job-comments">
+              <p>
+                  <span class="label label-default">岗位晋升</span>
+                  <span class="label label-default">绩效奖金</span>
+                  <span class="label label-default">领导好</span>
+                  <span class="label label-default">五险一金</span>
+                  <span class="label label-default">购房津贴</span>
+                  <span class="label label-default">股票期权</span>
+              </p>
+            </div>
+            <div class="job-meta">
+              <span class="job-location">[广州]</span><span class="job-publish-time">12天前</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <a href="http://job.liepin.com/338_3385001?mscid=b_o_0001" class="job-item-wrap" title="效果图设计师" target="_blank"  onclick="_hmt.push(['_trackEvent', 'jobs', 'click', '效果图设计师-上海-http://job.liepin.com/338_3385001?mscid=b_o_0001'])">
+          <div class="job-item">
+            <div class="job-source light-green">
+              <img class="img-responsive" src="http://gm0.lietou-static.com/user/pic_logo/big/54d1ea9a712eb4f6b84dcba801a.jpg">
+            </div>
+            <div class="job-company">卓宝计算机技术(上海)有限公司</div>
+            <div class="job-title">效果图设计师</div>
+            <div class="job-salary">年薪：8-10万</div>
+            <div class="job-comments">
+              <p>
+                  <span class="label label-default">定期体检</span>
+                  <span class="label label-default">五险一金</span>
+                  <span class="label label-default">发展空间大</span>
+                  <span class="label label-default">岗位晋升</span>
+                  <span class="label label-default">管理规范</span>
+              </p>
+            </div>
+            <div class="job-meta">
+              <span class="job-location">[上海]</span><span class="job-publish-time">12天前</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <a href="http://job.liepin.com/338_3384299?mscid=b_o_0001" class="job-item-wrap" title="Python研发工程师" target="_blank"  onclick="_hmt.push(['_trackEvent', 'jobs', 'click', 'Python研发工程师-北京-http://job.liepin.com/338_3384299?mscid=b_o_0001'])">
+          <div class="job-item">
+            <div class="job-source light-green">
+              <img class="img-responsive" src="http://gm0.lietou-static.com/user/pic_logo/big/54d1eac9712eb4f6b84df67501a.png">
+            </div>
+            <div class="job-company">北京云江科技有限公司</div>
+            <div class="job-title">Python研发工程师</div>
+            <div class="job-salary">年薪：18-30万</div>
+            <div class="job-comments">
+              <p>
+                  <span class="label label-default">交通补助</span>
+                  <span class="label label-default">弹性工作</span>
+                  <span class="label label-default">与技术牛人共事</span>
+                  <span class="label label-default">扁平管理</span>
+                  <span class="label label-default">五险一金</span>
+                  <span class="label label-default">节日礼物</span>
+              </p>
+            </div>
+            <div class="job-meta">
+              <span class="job-location">[北京]</span><span class="job-publish-time">12天前</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <a href="http://job.liepin.com/338_3384255?mscid=b_o_0001" class="job-item-wrap" title="Android开发" target="_blank"  onclick="_hmt.push(['_trackEvent', 'jobs', 'click', 'Android开发-北京-http://job.liepin.com/338_3384255?mscid=b_o_0001'])">
+          <div class="job-item">
+            <div class="job-source light-green">
+              <img class="img-responsive" src="http://gm0.lietou-static.com/user/pic_logo/big/54d1ea4e712e7147fd81c70602c.png">
+            </div>
+            <div class="job-company">北京新美互通科技有限公司</div>
+            <div class="job-title">Android开发</div>
+            <div class="job-salary">年薪：18-30万</div>
+            <div class="job-comments">
+              <p>
+                  <span class="label label-default">节日礼物</span>
+                  <span class="label label-default">午餐补助</span>
+                  <span class="label label-default">技能培训</span>
+                  <span class="label label-default">团队聚餐</span>
+                  <span class="label label-default">弹性工作</span>
+                  <span class="label label-default">五险一金</span>
+              </p>
+            </div>
+            <div class="job-meta">
+              <span class="job-location">[北京]</span><span class="job-publish-time">12天前</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <a href="http://job.liepin.com/338_3384208?mscid=b_o_0001" class="job-item-wrap" title="Web前端" target="_blank"  onclick="_hmt.push(['_trackEvent', 'jobs', 'click', 'Web前端-北京-http://job.liepin.com/338_3384208?mscid=b_o_0001'])">
+          <div class="job-item">
+            <div class="job-source light-green">
+              <img class="img-responsive" src="http://gm0.lietou-static.com/user/pic_logo/big/54d1ea4e712e7147fd81c70602c.png">
+            </div>
+            <div class="job-company">北京新美互通科技有限公司</div>
+            <div class="job-title">Web前端</div>
+            <div class="job-salary">年薪：12-24万</div>
+            <div class="job-comments">
+              <p>
+                  <span class="label label-default">交通补助</span>
+                  <span class="label label-default">团队聚餐</span>
+                  <span class="label label-default">领导好</span>
+                  <span class="label label-default">弹性工作</span>
+                  <span class="label label-default">岗位晋升</span>
+                  <span class="label label-default">午餐补助</span>
+              </p>
+            </div>
+            <div class="job-meta">
+              <span class="job-location">[北京]</span><span class="job-publish-time">12天前</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <a href="http://job.liepin.com/338_3384176?mscid=b_o_0001" class="job-item-wrap" title="Android应用软件工程师" target="_blank"  onclick="_hmt.push(['_trackEvent', 'jobs', 'click', 'Android应用软件工程师-上海-http://job.liepin.com/338_3384176?mscid=b_o_0001'])">
+          <div class="job-item">
+            <div class="job-source light-green">
+              <img class="img-responsive" src="http://gm0.lietou-static.com/user/pic_logo/big/default_e.gif">
+            </div>
+            <div class="job-company">深圳市至高通信技术发展有限公司</div>
+            <div class="job-title">Android应用软件工程师</div>
+            <div class="job-salary">年薪：10-20万</div>
+            <div class="job-comments">
+              <p>
+                  <span class="label label-default">技能培训</span>
+                  <span class="label label-default">绩效奖金</span>
+                  <span class="label label-default">团队聚餐</span>
+                  <span class="label label-default">岗位晋升</span>
+                  <span class="label label-default">午餐补助</span>
+                  <span class="label label-default">节日礼物</span>
+              </p>
+            </div>
+            <div class="job-meta">
+              <span class="job-location">[上海]</span><span class="job-publish-time">12天前</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <a href="http://job.liepin.com/338_3384150?mscid=b_o_0001" class="job-item-wrap" title="PHP研发工程师" target="_blank"  onclick="_hmt.push(['_trackEvent', 'jobs', 'click', 'PHP研发工程师-北京-http://job.liepin.com/338_3384150?mscid=b_o_0001'])">
+          <div class="job-item">
+            <div class="job-source light-green">
+              <img class="img-responsive" src="http://gm0.lietou-static.com/user/pic_logo/big/54d1ea4e712e7147fd81c70602c.png">
+            </div>
+            <div class="job-company">北京新美互通科技有限公司</div>
+            <div class="job-title">PHP研发工程师</div>
+            <div class="job-salary">年薪：12-24万</div>
+            <div class="job-comments">
+              <p>
+                  <span class="label label-default">团队聚餐</span>
+                  <span class="label label-default">交通补助</span>
+                  <span class="label label-default">节日礼物</span>
+                  <span class="label label-default">午餐补助</span>
+                  <span class="label label-default">五险一金</span>
+                  <span class="label label-default">岗位晋升</span>
+              </p>
+            </div>
+            <div class="job-meta">
+              <span class="job-location">[北京]</span><span class="job-publish-time">12天前</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <a href="http://job.liepin.com/338_3384149?mscid=b_o_0001" class="job-item-wrap" title="UI设计师" target="_blank"  onclick="_hmt.push(['_trackEvent', 'jobs', 'click', 'UI设计师-北京-http://job.liepin.com/338_3384149?mscid=b_o_0001'])">
+          <div class="job-item">
+            <div class="job-source light-green">
+              <img class="img-responsive" src="http://gm0.lietou-static.com/user/pic_logo/big/54d314e5a3106caffec117b002c.png">
+            </div>
+            <div class="job-company">梦响强音文化传播(上海)有限公司</div>
+            <div class="job-title">UI设计师</div>
+            <div class="job-salary">年薪：9-10万</div>
+            <div class="job-comments">
+              <p>
+                  <span class="label label-default">扁平管理</span>
+                  <span class="label label-default">年底双薪</span>
+                  <span class="label label-default">团队聚餐</span>
+                  <span class="label label-default">带薪年假</span>
+                  <span class="label label-default">弹性工作</span>
+                  <span class="label label-default">通讯津贴</span>
+              </p>
+            </div>
+            <div class="job-meta">
+              <span class="job-location">[北京]</span><span class="job-publish-time">12天前</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <a href="http://job.liepin.com/338_3384043?mscid=b_o_0001" class="job-item-wrap" title="高级算法工程师" target="_blank"  onclick="_hmt.push(['_trackEvent', 'jobs', 'click', '高级算法工程师-上海-http://job.liepin.com/338_3384043?mscid=b_o_0001'])">
+          <div class="job-item">
+            <div class="job-source light-green">
+              <img class="img-responsive" src="http://gm0.lietou-static.com/user/pic_logo/big/54d1e9ce712eb4f6b84d0eef01a.png">
+            </div>
+            <div class="job-company">NDP Media Corp</div>
+            <div class="job-title">高级算法工程师</div>
+            <div class="job-salary">年薪：25-40万</div>
+            <div class="job-comments">
+              <p>
+                  <span class="label label-default">带薪年假</span>
+                  <span class="label label-default">团队聚餐</span>
+                  <span class="label label-default">岗位晋升</span>
+                  <span class="label label-default">福利丰厚，平台大</span>
+                  <span class="label label-default">扁平管理</span>
+                  <span class="label label-default">领导好</span>
+              </p>
+            </div>
+            <div class="job-meta">
+              <span class="job-location">[上海]</span><span class="job-publish-time">12天前</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <a href="http://job.liepin.com/338_3384035?mscid=b_o_0001" class="job-item-wrap" title="数据挖掘" target="_blank"  onclick="_hmt.push(['_trackEvent', 'jobs', 'click', '数据挖掘-上海-http://job.liepin.com/338_3384035?mscid=b_o_0001'])">
+          <div class="job-item">
+            <div class="job-source light-green">
+              <img class="img-responsive" src="http://gm0.lietou-static.com/user/pic_logo/big/54d1e9ce712eb4f6b84d0eef01a.png">
+            </div>
+            <div class="job-company">NDP Media Corp</div>
+            <div class="job-title">数据挖掘</div>
+            <div class="job-salary">年薪：24-40万</div>
+            <div class="job-comments">
+              <p>
+                  <span class="label label-default">绩效奖金</span>
+                  <span class="label label-default">午餐补助</span>
+                  <span class="label label-default">技能培训</span>
+                  <span class="label label-default">扁平管理</span>
+                  <span class="label label-default">节日礼物</span>
+                  <span class="label label-default">福利丰厚，平台大</span>
+              </p>
+            </div>
+            <div class="job-meta">
+              <span class="job-location">[上海]</span><span class="job-publish-time">12天前</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <a href="http://job.liepin.com/338_3383828?mscid=b_o_0001" class="job-item-wrap" title="后台软件开发工程师" target="_blank"  onclick="_hmt.push(['_trackEvent', 'jobs', 'click', '后台软件开发工程师-合肥-http://job.liepin.com/338_3383828?mscid=b_o_0001'])">
+          <div class="job-item">
+            <div class="job-source light-green">
+              <img class="img-responsive" src="http://gm0.lietou-static.com/user/pic_logo/big/default_e.gif">
+            </div>
+            <div class="job-company">上海中商网络股份有限公司</div>
+            <div class="job-title">后台软件开发工程师</div>
+            <div class="job-salary">年薪：10-15万</div>
+            <div class="job-comments">
+              <p>
+                  <span class="label label-default">绩效奖金</span>
+                  <span class="label label-default">午餐补助</span>
+                  <span class="label label-default">通讯津贴</span>
+                  <span class="label label-default">外派津贴</span>
+                  <span class="label label-default">年底双薪</span>
+                  <span class="label label-default">定期体检</span>
+              </p>
+            </div>
+            <div class="job-meta">
+              <span class="job-location">[合肥]</span><span class="job-publish-time">12天前</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <a href="http://job.liepin.com/338_3383569?mscid=b_o_0001" class="job-item-wrap" title="SEM" target="_blank"  onclick="_hmt.push(['_trackEvent', 'jobs', 'click', 'SEM-北京-http://job.liepin.com/338_3383569?mscid=b_o_0001'])">
+          <div class="job-item">
+            <div class="job-source light-green">
+              <img class="img-responsive" src="http://gm0.lietou-static.com/user/pic_logo/big/54d1e9be712e7147fd81287901a.png">
+            </div>
+            <div class="job-company">普信恒业科技发展(北京)有限公司</div>
+            <div class="job-title">SEM</div>
+            <div class="job-salary">年薪：20-30万</div>
+            <div class="job-comments">
+              <p>
+                  <span class="label label-default">弹性工作</span>
+                  <span class="label label-default">六险一金</span>
+                  <span class="label label-default">岗位晋升</span>
+                  <span class="label label-default">年底双薪</span>
+                  <span class="label label-default">扁平管理</span>
+                  <span class="label label-default">管理规范</span>
+              </p>
+            </div>
+            <div class="job-meta">
+              <span class="job-location">[北京]</span><span class="job-publish-time">12天前</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <a href="http://job.liepin.com/338_3383417?mscid=b_o_0001" class="job-item-wrap" title="C#开发工程师" target="_blank"  onclick="_hmt.push(['_trackEvent', 'jobs', 'click', 'C#开发工程师-上海-http://job.liepin.com/338_3383417?mscid=b_o_0001'])">
+          <div class="job-item">
+            <div class="job-source light-green">
+              <img class="img-responsive" src="http://gm0.lietou-static.com/user/pic_logo/big/54d1ea10712e7147fd8190e902c.png">
+            </div>
+            <div class="job-company">上海极值信息技术有限公司</div>
+            <div class="job-title">C#开发工程师</div>
+            <div class="job-salary">年薪：10-15万</div>
+            <div class="job-comments">
+              <p>
+                  <span class="label label-default">领导好</span>
+                  <span class="label label-default">绩效奖金</span>
+                  <span class="label label-default">弹性工作</span>
+                  <span class="label label-default">带薪年假</span>
+                  <span class="label label-default">岗位晋升</span>
+                  <span class="label label-default">团队聚餐</span>
+              </p>
+            </div>
+            <div class="job-meta">
+              <span class="job-location">[上海]</span><span class="job-publish-time">12天前</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      
+      
+    </div><!-- .row -->
+
+    <div class="col-sm-6 col-sm-push-3 col-md-4 col-md-push-4">
+      <p>
+        <a class="btn-load-more btn btn-primary btn-lg btn-block" href="/page/3"><i class="fa fa-th"></i>  更多职位</a>
+      </p>
+    </div>
+	
+  </div><!-- .container -->
+</section>
+
+
+
+<footer class="footer ">
+
+  <div class="powered-by-liepin text-center">
+    <span>独家合作伙伴：<a class="liepin-link text-hide" href="http://www.liepin.com/?mscid=b_o_0001" target="_blank" style="background-image:url(/assets/img/liepin-bottom.png);"  onclick="_hmt.push(['_trackEvent', 'friend', 'click', '猎聘网'])">猎聘网</a></span>
+  </div>
+  <div class="container">
+    <div class="row footer-top">
+      <div class="col-sm-6 col-lg-6">
+        <h4>
+          <img src="/assets/img/logo.png">
+        </h4>
+        <p>Bootstrap中文网招聘频道展示的所有职位信息全部来自<a href="http://www.liepin.com/?mscid=b_o_0001">猎聘网</a>。</p>
+      </div>
+      <div class="col-sm-6  col-lg-5 col-lg-offset-1">
+        <div class="row about">
+          <div class="col-xs-4 col-md-3">
+            <h4>关于</h4>
+            <ul class="list-unstyled">
+              <li><a href="http://www.bootcss.com/about/">关于我们</a></li>
+              <li><a href="http://www.bootcss.com/ad/">广告合作</a></li>
+              <li><a href="http://www.bootcss.com/links/">友情链接</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-4 col-md-3">
+            <h4>联系方式</h4>
+            <ul class="list-unstyled">
+              <li><a href="http://weibo.com/bootcss" title="Bootstrap中文网官方微博" target="_blank">新浪微博</a></li>
+              <li><a href="mailto:admin@bootcss.com">电子邮件</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-4 col-md-3">
+            <h4>旗下网站</h4>
+            <ul class="list-unstyled">
+              <li><a href="http://www.golaravel.com/" target="_blank">Laravel中文网</a></li>
+              <li><a href="http://www.ghostchina.com/" target="_blank">Ghost中国</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 hidden-xs">
+            <h4>赞助商</h4>
+            <ul class="list-unstyled">
+              <li><a href="http://www.ucloud.cn/" target="_blank">UCloud</a></li>
+              <li><a href="https://www.upyun.com" target="_blank">又拍云</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <hr/>
+    <div class="row footer-bottom">
+      <ul class="list-inline text-center">
+        <li><a href="http://www.miibeian.gov.cn/" target="_blank">京ICP备11008151号</a></li><li>京公网安备11010802014853</li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+  <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script src="http://cdn.bootcss.com/scrollup/2.4.0/jquery.scrollUp.min.js"></script>
+  <script>
+  ;(function(window, document, $){
+    // $(document).ready(function(){
+    //   $.adaptiveBackground.run()
+    // });
+
+    $.scrollUp({
+          scrollName: 'scrollUp', // Element ID
+          topDistance: '300', // Distance from top before showing element (px)
+          topSpeed: 300, // Speed back to top (ms)
+          animation: 'fade', // Fade, slide, none
+          animationInSpeed: 200, // Animation in speed (ms)
+          animationOutSpeed: 200, // Animation out speed (ms)
+          scrollText: '<i class="fa fa-angle-up"></i>', // Text for element
+          activeOverlay: false  // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+    });
+
+    $(window).scroll(function() {
+        if ($("#navbar-top").offset().top > 300) {
+            $('.co-brand > img').attr('src', 'http://job.bootcss.com/assets/img/liepin-logo50p.png');
+        } else {
+            $('.co-brand > img').attr('src', 'http://job.bootcss.com/assets/img/liepin-logo.png');
+        }
+    });
+  })(window, document, jQuery)
+  </script>
+  <script type="text/javascript">
+  var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+  document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fd979e0116b6882c9cdc4cf2c8467d312' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+@charset "utf-8";
+
+.side_nav,.hidden{display:none;}
+
+/*折800   注册*/
+.tao_r{ clear:both; margin:10px auto; width:980px; overflow:hidden;height: 510px;background-color: #fff;}
+.tao_r .left{ width:340px;float:right; height:330px;text-align:left;margin-right: 90px; margin-top: 60px;}
+.tao_r .left .top{ font-size:24px; font-family:"微软雅黑"; line-height:30px; padding-bottom:20px;}
+.tao_r .left .top span{ font-size:14px; display:block;  text-indent:0px; padding-right:20px;padding-top: 10px;}
+.tao_r .left .login_mid{ width:400px; float:left;padding-left: 60px;position: relative;}
+.tao_r .left .login_mid label{display:block; padding:10px 0;}
+.tao_r .left .login_mid .hidden{display: none;padding-top: 8px;}
+.tao_r .left .login_mid strong{ width:70px; display:inline-block; font-weight:normal;font-size:14px;padding-top: 6px;}
+.tao_r .left .login_mid input{*vertical-align:middle}
+.tao_r .left .login_mid input.t,.tao_r .left .login_mid input.t_yzm{color: #999999; width:183px; border:1px solid #c4c4c4; vertical-align:middle; height:18px; padding:10px;padding-left: 45px; line-height:18px;}
+.tao_r .left .login_mid input.t:focus,.tao_r .left .login_mid input.t_yzm:focus{color: #000;}
+.tao_r .left .login_mid input.t:hover,.tao_r .left .login_mid input.t_yzm:hover{border:1px solid #fa967e;}
+.tao_r .left .login_mid .b_password,.tao_r .left .login_mid .b_password_c,.tao_r .left .login_mid .on_suc{ width:79px; height:37px; background:url(/v1/2012/tao800_login/images/t_re_bg.png) 0px -105px no-repeat; border:0; cursor:pointer; margin:10px; text-decoration:none}
+.tao_r .left .login_mid .b{ display: inline-block; width:122px; height:42px; background:url(http://z5.tuanimg.com/v1/login/img/login_signin.png) no-repeat 0px 0px; border:0; cursor:pointer; margin-right:25px;margin-top: 13px; text-decoration:none; vertical-align:middle;}
+.tao_r .left .login_mid .on_b{ width:79px; height:37px; background:url(/v1/2012/tao800_login/images/t_re_bg.png) -98px -105px no-repeat; border:0; margin-right:10px; display:inline-block}
+.tao_r .left .login_mid span{font-size: 12px;}
+.tao_r .left .login_mid>span{ font-size:28px;font-family: "微软雅黑";color: #333333;}
+.tao_r .left .login_mid span.State_1,.tao_r .left .login_mid span.State_2,.tao_r .left .login_mid span.State_3{ padding-left:30px; background:url(/v1/2012/tao800_login/images/t_re_bg.png) -2px -3px no-repeat; color:#999; height:28px; line-height:28px; display:inline-block}
+.tao_r .left .login_mid span.State_2{ background-position:-2px -52px; position:absolute;}
+.tao_r .left .login_mid span.State_3{ background-position:-2px -490px;color:#f83501 ; position:absolute;}
+.tao_r .left .login_mid a{color:#666666;}
+.tao_r .left .login_mid img{ vertical-align:middle; border:1px solid #d8d8d8; margin-right:10px}
+.tao_r .left .login_mid input.t_yzm{ width:126px; margin-right:10px}
+.tao_r .left .login_mid .b_suc{ width:210px; margin:15px 0px 0px 20px; display: inline-block;height:37px; background:url(/v1/2012/tao800_login/images/t_re_bg.png) 0px -572px no-repeat; border:0; margin-right:10px; display:inline-block}
+.tao_r .left .login_mid .on_suc{ width:210px; height:37px; background:url(/v1/2012/tao800_login/images/t_re_bg.png) 0px -535px no-repeat; border:0; margin:10px; display:inline-block;margin-left:-82px;}
+.tao_r .re_mid{ height:500px; overflow:hidden}
+.tao_r .right{float:left; text-align:center; font-size:14px;}
+.tao_r .right .no_r{color:#f32802; padding-bottom:10px;}
+.tao_r .right .no_r a,.tao_r .right .ok_re a{color:#f32802; text-decoration:underline}
+.tao_r .right p{ line-height:30px;}
+.tao_r .right a.login_tuan800{ width:160px; height:37px; background:url(/v1/2012/tao800_login/images/t_re_bg.png) 0px -146px no-repeat; display:block; clear:left; margin:10px auto 0}
+
+.tao_r .right .right_b_bg{width:460px;height:330px; margin-top:60px;margin-left: 90px;}
+
+.tao_r .error .comfir_mail{text-decoration: underline;color:#09c;cursor: pointer;}
+/*提示*/
+/* select下拉 */
+#ppLogin .ppselecter, #ppLogin .ppselecter *{font-size:12px; font-family: 'Verdana', 'Arial', 'Helvetica', 'sans-serif'; line-height:normal;}
+#ppLogin .ppselecter{width:238px;border: 1px solid #fa967e}
+#ppLogin .ppselecter .ppseltit{background-color: #FFF6DF;height:15px;padding-top:4px;text-indent:6px; color:#666;}
+#ppLogin .ppselecter table td{padding: 3px;}
+#ppLogin .ppselecter .active{background:#f4efed; color:#333; font-weight: normal;}
+
+.tao_r .left .login_mid .pptitle2{width:300px;height:30px;line-height:30px;}
+.tao_r .left .login_mid .pptitle2 span{float:left;}
+.tao_r .left .login_mid .pptitle2 a{float:right;}
+.tao_r .left .login_mid .ppcontent{float:left;}
+.tao_r .left .login_mid .listContA{width:300px;_width /**/:302px;height:76px;_height /**/:78px ;border:1px #FFD391 solid;background:#fff;margin:0px 3px 0px -1px;color:#FF6000;}
+.tao_r .left .login_mid .listContA ul{margin-top:7px!important;margin-top:9px;margin-left:8px;}
+.tao_r .left .login_mid .listContA li{margin-bottom:7px;}
+.tao_r .left .login_mid .listContA li p{color:#313031;}
+
+.tao_r .left .login_mid .middle{color:#666;margin-left:-1px;}
+.tao_r .left .login_mid .middle li{float:left;margin-top:6px;margin-left:5px;}
+.tao_r .left .login_mid .middle li img{background:url(images/pic005.gif) no-repeat;width:34px;height:13px;}
+.tao_r .left .login_mid .middle .current{padding:6px 7px 2px 7px;margin:-1px 0px 0px 0px;background:#fff;border:1px #FFD391 solid;border-top:0px;color:#000;}
+
+
+/*报错*/
+.tao_r .left .login_mid .error{color:#FF6000;}
+
+
+/*激活成功*/
+.tao_r_jh{ width:980px; clear:left; margin:10px auto 0; background:#fefede; overflow:hidden; text-align: left;}
+
+.tao_r_jh .jh_suc{ width:460px; clear:left; margin:0px auto; padding:50px 0; overflow: hidden}
+.tao_r_jh .jh_suc .top{ font-size:14px; font-weight:bold; background: url(/v1/2012/tao800_login/images/t_re_bg.png) 0 -666px no-repeat;color:#db1c00; height:40px; line-height:40px; padding-left:40px; float:left; width:420px}
+.tao_r_jh .jh_suc .mid{ font-size:14px; line-height:40px; float:left; width:460px}
+.tao_r_jh .jh_suc .mid a{color:#f42c02; margin-right:10px; text-decoration:underline}
+.tao_r_jh .jh_suc .mid strong{ display:block}
+.tao_r_jh .jh_suc .input_t{ width:440px; height:18px; padding:4px;color:#f42c02;text-decoration:underline; font-size:14px; border:1px solid #ccc; float:left; background:#fff; line-height:18px}
+.tao_r_jh .jh_suc .bottom,.tao_tc .bottom{width:440px; float:left; font-size:14px; margin-top:30px}
+.tao_r_jh .jh_suc .bottom a,.tao_tc .bottom a{ width:110px; height:34px; background:url(/v1/2012/tao800_login/images/t_re_bg.png) 0px -719px no-repeat; display:block; padding-right:40px;color:#fff; text-align:center; line-height:30px; display:inline-block; margin-right:10px; text-decoration:none}
+.tao_tc .bottom a{ background-position:0px -865px}
+/*注册成功*/
+.tao_r_suc { float:left; width:460px;  font-size:14px;line-height:40px; padding-top:20px}
+.tao_r_suc strong{ font-weight:bold; color:#db1c00;float:left; width:460px}
+.tao_r_suc a{color:#f12102; text-decoration:underline}
+.tao_r_suc span{color:#606060; font-size:12px}
+
+/*找回密码*/
+.tao_r_password{ width:827px; clear:left; margin:10px auto 0; background:#fefede; overflow:hidden; padding-left:153px; height:300px; padding-top:30px}
+.tao_r_tc{ background:#fefede;margin:10px auto 0;}
+
+.tao_r_password .left{ border:0}
+.tao_r .left .login_mid .b_password{ background-position:0px -763px; width:120px; display: inline-block;margin-left: 0;}
+.tao_r .left .login_mid .b_password_c{ background-position:0px -815px; width:120px; display: inline-block}
+.tao_r .left .login_mid .no_b_password_c,.tao_r .left .login_mid .no_b_password{width:120px; display: inline-block; height:37px; background:url(/v1/2012/tao800_login/images/t_re_bg.png) 0px -957px no-repeat; margin-right:10px}
+.tao_r .left .login_mid .no_b_password{ background-position:0px -912px}
+
+/*弹窗*/
+.t_dhm_tc_border{border:7px solid #0e0e0e;-webkit-border-radius: 10px;-moz-border-radius: 10px; width:460px; height:250px; filter:alpha(opacity=40); -moz-opacity:0.4; opacity:0.4; position:absolute; left:-7px; top:-7px; z-index:0;}
+.t_dhm_tc{ width:460px; height:250px; clear:left; background:#fff; position:relative; margin:0px auto; z-index:1}
+.t_dhm_tc .dhm_gb{ width:460px; height:24px; float:left;}
+.t_dhm_tc .dhm_gb a{ width:29px; height:24px; display:block; background:url(/v1/2012/tao800_login/images/dhm_tc_bg.png) no-repeat; float:right; z-index:2; position:relative}
+.t_dhm_tc .dhm_gb a:hover{ width:29px; height:24px; display:block; background:url(/v1/2012/tao800_login/images/dhm_tc_bg.png) 0px -24px no-repeat;}
+
+.tao_tc{ padding:20px; width:420px; font-size:14px; float:left; line-height:30px; position:relative; z-index:2}
+.tao_tc strong{ display:block}
+.tao_tc .bottom{ width:420px}
+.tao_tc_f{ width:420px; float:left;}
+.tao_tc_f a{color:#f02102; text-decoration:underline}
+.tao_tc_f span{color:#a4a4a4; font-size:12px; display:block}
+.tao_update_tc{ padding:20px; width:420px; float:left; font-size:14px; line-height:30px; position:relative; z-index:2}
+.tao_update_tc .update_top{ font-weight:bold; background: url(/v1/2012/tao800_login/images/t_re_bg.png) 0 -666px no-repeat;height:35px; line-height:35px; padding-left:40px; float:left; width:380px}
+.tao_update_tc p { float:left; width:420px}
+.tao_update_tc p span{color:#f22502;}
+.tao_update_tc a{color:#f22502; text-decoration:underline}
+
+.errorExplanation{ line-height:20px; color:#D50000;}
+.errorExplanation h2{ text-align:left; font-weight:bold;}
+.tao_r .reg-ad1{ height:auto;}
+
+.othlogin{position: relative;left:-20px;top:0px;margin-top:10px;padding-left:21px;}
+.othlogin h2{text-align: left;padding-top:10px;line-height: 20px;}
+.othlogin p{padding-top:15px;height:40px;}
+.othlogin p .qq{float:left;display: inline-block;background: url(../img/bg2.png) no-repeat 0 0;width: 92px;height: 33px;margin-right: 10px;text-indent: -900px;overflow: hidden;}
+.morel span{float:left;display: inline-block;text-decoration: none;}
+.tao_r .left .login_mid a.morel{float:left;display: inline-block;margin: 10px;text-decoration: none;color: #999;}
+.moreicon {float:left;display: inline-block;background: url(../img/bg2.png) no-repeat 0 -113px;width: 9px;height: 6px;text-indent: -900px;overflow: hidden;margin:5px;}
+.iconup {background-position: -14px -113px;}
+.more_login .sina,.more_login .taobao,.more_login .renren{float:left;display: inline-block;width:83px;height:25px;background: url(../img/bg2.png) no-repeat 0 0;margin-right: 10px;text-indent: -900px;overflow: hidden;}
+.more_login .sina{background-position: 0px -33px;}
+.more_login .renren{background-position: 0px -58px;}
+.more_login .taobao{background-position: 0px -83px;}
+.tao_r .left .login_mid .taobaosub{width:79px;height:37px;background: url(/v1/2012/tao800_login/images/login_bg1.png) no-repeat 0 -24px; }
+
+
+/*58765*/
+.tao_r .left .login_mid .captcha_box{display: none;white-space: nowrap;}
+.tao_r .left .login_mid .captcha_box input.t{width: 45px; margin-right: 13px;height: 14px; padding-left: 10px;padding-bottom: 6px; padding-top: 6px;}
+.tao_r .left .login_mid .captcha_box img{height: 26px;cursor: pointer;width: 83px;margin-right: 0px;display: inline-block;}
+
+
+/*38651 增加百度联合登陆按钮*/
+.othlogin p .baidu{background:url(/v1/jifen/welfare/img/hao123dialog.png) no-repeat 0 -88px;width:98px;height:33px;float:left;margin-right:10px;overflow:hidden;}
+
+/*56917登录页面简洁化*/
+.header{display: none;}
+#head_nav{display: none;}
+#toolbar{display: none;}
+.about{display: none;}
+.side_panel{display: none;}
+.top_head{clear: both; margin: 0 auto; width: 980px; padding: 20px 0px 0px; overflow: hidden;}
+.top_head>a{float: left;}
+.top_head>a img{width: 236px;}
+.top_head p{float: right; margin-top: 20px;}
+.top_head .ok_re{color: #666666;margin-bottom: 13px;}
+.top_head .ok_re a{color: #0078c6;}
+.tao_r .left .login_mid .user_name{background: url(http://z5.tuanimg.com/v1/login/img/login_user.png) no-repeat 0px 0px;width: 12px;height: 12px;position: absolute;top: 24px;left: 15px;}
+.tao_r .left .login_mid .user_keywords{background: url(http://z5.tuanimg.com/v1/login/img/login_user.png) no-repeat -17px 0px;width: 12px;height: 12px;position: absolute;top: 84px;left: 15px;}
+.tao_r .left .login_mid form{position: relative;border-bottom: 1px solid #e5e5e5; width: 246px;}
+.tao_r .left .login_mid form .forget_num{margin-top: 23px; display: inline-block; float: right;*float: none; margin-right: 37px;}
+#capslock{display: none; width: 103px; padding-left: 4px; line-height: 19px; height: 20px; position: absolute; top: 117px; color: #e32c26; right: 51px; border: 1px solid #FF8080;}
+

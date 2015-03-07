@@ -1,0 +1,13 @@
+@charset "utf-8";
+.f_links_nav {font-size: 18px;line-height: 35px;padding:20px;text-align: left;width:940px;color: #c00;font-weight: bold;font-family: "微软雅黑";}
+.f_links {text-align: left;width:940px; margin:0 auto}
+.f_links p {display: block;font-weight: bold;height: 40px;line-height: 40px;padding-left: 12px;}
+.f_links ul {background: url(http://z0.tuanimg.com/v1/2012/images/tuan_navlist_bg.png) repeat scroll left top transparent;overflow: hidden;padding-bottom: 20px;width: 940px;}
+.f_links li {float: left;height: 35px;line-height: 35px;overflow: hidden;padding-left: 10px;width: 124px;background: url(http://s0.tuanimg.com/2012/static_deploy/images/footer_list1.png)  no-repeat 0 17px}
+.f_links a {color: #666;}
+.f_links a:hover{color: #06C;}
+.f_links h2 {height: 30px;margin-bottom: 10px;border-bottom: 1px solid #E5E5E5;color: #333333;font-size: 14px;line-height: 30px;text-indent: 10px;}
+.f_links_wb{width:920px;padding:10px;background:#f7f7f7;margin:10px auto 20px;text-align: left;line-height: 30px;font-size: 12px;color:#333;}
+.f_links_wb b{display: block;font:bold 18px/30px "微软雅黑";color:#c00;}
+.f_links_wb p{padding:10px;}
+.f_links_wb p em{padding-left: 12px;}
