@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+.baikeDialog {
+	position: fixed;
+	display: none;
+	bottom: 0;
+	width: 145px;
+	height: 85px;
+	right: 50px;
+	background: url('../img/dialogBg.png') no-repeat;
+	transition: all 0.1s;
+	-moz-transition: all 0.1s;
+	-webkit-transition: all 0.1s;
+	-o-transition: all 0.1s;
+	z-index: 9999;
+}
+
+.baikeDialog .dialogClose {
+	position: absolute;
+	width: 15px;
+	height: 18px;
+	top: 16px;
+	left: 127px;
+}
+
+.baikeDialog a {
+	position: absolute;
+	color: #a02600;
+	top: 20px;
+	width: 125px;
+	height: 45px;
+	left: 0px;
+}
+
+.baikeDialog a p {
+	position: absolute;
+	top: 12px;
+	width: 130px;
+	left: 7px;
+}
+
+.baikeDialog:hover {
+	transform: scale(1.1, 1.05);
+	-webkit-transform: scale(1.1, 1.05);
+	-moz-transform: scale(1.1, 1.05);
+	-o-transform: scale(1.1, 1.05);
+}
+/*59846 修改顶部搜索框的联想宽度*/
+.search .search_query {
+	position: absolute;
+	z-index: 9999;
+	border: 1px solid #e5e5e5;
+	border-top: none;
+	width: 220px;
+	*width: 221px;
+	top: 32px;
+	*top: 30px;
+	left: 1px;
+	*left: 3px;
+	background-color: #fff;
+}

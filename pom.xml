@@ -9,11 +9,12 @@
   <url>http://maven.apache.org</url>
 	<properties>
 		<java-version>1.6</java-version>
-		<spring-version>3.0.5.RELEASE</spring-version>
+		<spring-version>3.1.2.RELEASE</spring-version>
 		<aspectj-version>1.6.10</aspectj-version>
 		<log4j-version>1.2.14</log4j-version>
 		<slf4j-version>1.6.6</slf4j-version>
 		<servlet-version>2.5</servlet-version>
+		<freemarker-version>2.3.18</freemarker-version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -68,6 +69,11 @@
 			</dependency>
 			<dependency>
 				<groupId>org.springframework</groupId>
+				<artifactId>spring-aspects</artifactId>
+				<version>${spring-version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
 				<artifactId>spring-web</artifactId>
 				<version>${spring-version}</version>
 			</dependency>
@@ -76,7 +82,25 @@
 				<artifactId>spring-webmvc</artifactId>
 				<version>${spring-version}</version>
 			</dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-test</artifactId>
+				<version>${spring-version}</version>
+			</dependency>
 			<!-- end spring jar -->
+			<!-- freemarker jar -->
+			<dependency>  
+	            <groupId>org.freemarker</groupId>  
+	            <artifactId>freemarker</artifactId>  
+	            <version>${freemarker-version}</version>  
+	        </dependency> 
+	        
+	        <dependency>
+				<groupId>org.aspectj</groupId>
+				<artifactId>aspectjweaver</artifactId>
+				<version>1.6.8</version>
+			</dependency>
+	        
 			<!-- log4j jar -->
 			<dependency>
 				<groupId>log4j</groupId>
@@ -136,5 +160,8 @@
 	<module>korres-webapp</module>
     <module>korres-member</module>
     <module>korres-common</module>
+    <module>korres-index</module>
+    <module>korres-product</module>
+    <module>korres-console</module>
   </modules>
 </project>

@@ -28,8 +28,10 @@ public class Constants {
 	
 	public static final String FILEPATH = "uploadify/uploads/";			//文件上传路径
 	
-	public static final String NO_INTERCEPTOR_PATH = ".*/((login)|(logout)|(code)|(app)|(websocket)).*";	//不对匹配该值的访问路径拦截（正则）
+	public static final String NO_INTERCEPTOR_PATH = ".*/((login)|(logout)|(code)|(app)|(websocket)|(apicenter)|(cart)).*";	//不对匹配该值的访问路径拦截（正则）
 	public static ApplicationContext WEB_APP_CONTEXT = null; //该值会在web容器启动时由WebAppContextListener初始化
+	
+	public static final String MEMBER_INTERCEPTOR_PATH = ".*/(member).*";	//对匹配该值的访问路径拦截（正则）
 	
 	/**
 	 * APP Constants

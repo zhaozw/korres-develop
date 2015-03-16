@@ -1,0 +1,32 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors xuchengbo (xuchengbo@cd.tuan800.com)
+ * @date    2014-05-26 10:52:19
+ * @version $Id$
+ */
+.sideAd {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	_position: absolute;
+	z-index: 1001;
+}
+
+.sideAd .close {
+	position: absolute;
+	width: 27px;
+	height: 27px;
+	background: url(/v2/patch/img/close.png) no-repeat;
+	_background-image: url(/v2/patch/img/close_8.png);
+	opacity: .5;
+	filter: alpha(opacity = 50);
+	top: 5px;
+	right: 5px;
+	z-index: 1002
+}
+
+.sideAd .close:hover {
+	opacity: .8;
+	filter: alpha(opacity = 80);
+}

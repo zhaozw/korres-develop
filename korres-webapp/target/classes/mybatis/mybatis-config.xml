@@ -10,16 +10,16 @@
     </settings>
 
 	<typeAliases>
-		<typeAlias type="com.korres.system.user.entity.system.User" alias="User"/>
+		<!-- <typeAlias type="com.korres.system.user.entity.system.User" alias="User"/>
 		<typeAlias type="com.korres.system.user.entity.system.Role" alias="Role"/>
-		<typeAlias type="com.korres.system.user.entity.system.Menu" alias="Menu"/>
-		<typeAlias type="com.korres.system.user.util.PageData" alias="pd"/>
+		<typeAlias type="com.korres.system.user.entity.system.Menu" alias="Menu"/> -->
+		<typeAlias type="com.korres.util.PageData" alias="pd"/>
 		<!-- 分页 -->
-		<typeAlias type="com.korres.system.user.entity.Page" alias="Page"/>
+		<typeAlias type="com.korres.entity.Page" alias="Page"/>
 	</typeAliases>
 	
 	<plugins>
-		<plugin interceptor="com.korres.system.user.plugin.PagePlugin">
+		<plugin interceptor="com.korres.plugin.PagePlugin">
 			<property name="dialect" value="mysql"/>
 			<property name="pageSqlId" value=".*listPage.*"/>
 		</plugin>
@@ -28,18 +28,9 @@
 	<mappers>
 	
 		<!-- 系统模块    开始 -->
-		<!-- 系统用户 -->
-		<mapper resource="mybatis/system/UserMapper.xml"/>
-		<!-- 系统角色 -->
-		<mapper resource="mybatis/system/RoleMapper.xml"/>
-		<!-- 系统菜单 -->
-		<mapper resource="mybatis/system/MenuMapper.xml"/>
-		<!-- 新用户处理 -->
-		<mapper resource="mybatis/system/UserXMapper.xml"/>
-		<!-- app用户 -->
-		<mapper resource="mybatis/system/AppuserMapper.xml"/>
-		<!-- 数据字典 -->
-		<mapper resource="mybatis/system/ZidianMapper.xml"/>
+		<!-- 会员 -->
+		<!-- <mapper resource="mybatis/system/UserMapper.xml"/> -->
+		
 		<!-- 系统模块    结束 -->
 		
 	</mappers>

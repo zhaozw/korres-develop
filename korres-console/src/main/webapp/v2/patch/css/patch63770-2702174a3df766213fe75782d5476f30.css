@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+/*patch63770弹窗css文件*/
+.que_dialog1 {
+	width: 418px;
+	height: 451px;
+	background: url(../img/que_dialog1.png) no-repeat 0 0;
+}
+
+.que_dialog1 .d_close {
+	position: absolute;
+	width: 23px;
+	height: 23px;
+	top: 72px;
+	left: 359px;
+	border-radius: 50%;
+}
+
+.que_dialog1 .d_iknow {
+	position: absolute;
+	width: 104px;
+	height: 38px;
+	left: 152px;
+	top: 376px;
+	border-radius: 6px;
+}
+
+.que_dialog2 {
+	width: 418px;
+	height: 440px;
+	background: url(../img/que_dialog2.png) no-repeat 0 0;
+}
+
+.que_dialog2 .d_close {
+	position: absolute;
+	width: 23px;
+	height: 23px;
+	top: 61px;
+	left: 359px;
+	border-radius: 50%;
+}
+
+.que_dialog2 .d_iknow {
+	position: absolute;
+	width: 104px;
+	height: 38px;
+	left: 152px;
+	top: 353px;
+	border-radius: 6px;
+}
+
+.que_dialog3 {
+	width: 419px;
+	height: 427px;
+	background: url(../img/que_dialog3.png) no-repeat 0 0;
+}
+
+.que_dialog3 .d_close {
+	position: absolute;
+	width: 23px;
+	height: 23px;
+	top: 47px;
+	left: 360px;
+	border-radius: 50%;
+}
+
+.que_dialog3 .d_iknow {
+	position: absolute;
+	width: 104px;
+	height: 38px;
+	left: 153px;
+	top: 336px;
+	border-radius: 6px;
+}
+
+.que_d span:hover {
+	cursor: pointer;
+}
+
+#queDialogCon1 .diginfo, #queDialogCon2 .diginfo, #queDialogCon3 .diginfo
+	{
+	border: none;
+	padding: 0;
+}
+
+#queDialogCon1.dialog-wrapper, #queDialogCon2.dialog-wrapper,
+	#queDialogCon3.dialog-wrapper {
+	background: none;
+	border: none;
+}
+
+#queDialogCon1 .close, #queDialogCon2 .close, #queDialogCon3 .close {
+	display: none;
+}

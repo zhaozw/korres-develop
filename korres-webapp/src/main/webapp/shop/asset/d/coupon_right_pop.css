@@ -1,0 +1,104 @@
+.coupon_right_pop {
+	position: fixed;
+	right: 34px;
+	bottom: 0;
+	_position: absolute;
+	_top: expression(document.documentElement.scrollTop +
+		document.documentElement.clientHeight-this.clientHeight);
+	background: #ff8533;
+	box-shadow: 0 0 5px rgba(0, 0, 0, .4);
+	width: 282px;
+	z-index: 1000
+}
+
+.coupon_right_pop a.close {
+	background: url(v1icon5.png) no-repeat 0 0;
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	top: 15px;
+	right: 10px
+}
+
+.coupon_right_pop .hd {
+	height: 45px;
+	font: 700 20px/44px "微软雅黑";
+	color: #fff;
+	background: #ec650b
+}
+
+.coupon_right_pop .numberblock {
+	font: 700 14px/30px "宋体";
+	color: #fff
+}
+
+.coupon_right_pop .numberblock em {
+	font-size: 24px;
+	color: #fff338;
+	margin: 0 5px
+}
+
+.coupon_right_pop .couponlistblock {
+	width: 236px;
+	margin: 0 auto
+}
+
+.coupon_right_pop .couponlistblock li {
+	margin-bottom: 10px;
+	width: 236px;
+	float: left;
+	background: url(v1icon24.png) no-repeat 0 0;
+	height: 73px;
+	overflow: hidden
+}
+
+.coupon_right_pop .couponlistblock li a {
+	width: 236px;
+	float: left;
+	height: 73px;
+	color: #666
+}
+
+.coupon_right_pop .couponlistblock li .c_price {
+	font: 700 44px/50px Arial;
+	color: #ff8533;
+	width: 80px;
+	text-align: center;
+	padding-top: 15px;
+	padding-left: 16px
+}
+
+.coupon_right_pop .couponlistblock li .c_price sup {
+	font: 700 24px/30px "微软雅黑"
+}
+
+.coupon_right_pop .couponlistblock li .title {
+	padding-top: 17px;
+	font: 18px/24px "微软雅黑";
+	text-align: center;
+	width: 126px
+}
+
+.coupon_right_pop .couponlistblock li .deadline {
+	width: 126px;
+	text-align: center
+}
+
+.coupon_right_pop .submit {
+	padding-bottom: 10px
+}
+
+.coupon_right_pop .submit a {
+	width: 148px;
+	border: 2px solid #ff8533;
+	height: 30px;
+	border-radius: 4px;
+	display: inline-block;
+	font: 18px/30px "微软雅黑";
+	color: #fff;
+	text-decoration: none
+}
+
+.coupon_right_pop .submit a:hover {
+	border-color: #ffa366
+}

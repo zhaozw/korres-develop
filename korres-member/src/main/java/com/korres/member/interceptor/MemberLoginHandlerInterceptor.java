@@ -26,9 +26,7 @@ public class MemberLoginHandlerInterceptor extends HandlerInterceptorAdapter{
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
 		String path = request.getServletPath();
 		logger.info("MemberLoginHandlerInterceptor url:" + path);
-		if(path.matches(Constants.NO_INTERCEPTOR_PATH)){
-			return true;
-		}else{
+		if(path.matches(Constants.MEMBER_INTERCEPTOR_PATH)){
 			HttpSession session = request.getSession();
 //			if(user!=null){
 //				
@@ -39,6 +37,8 @@ public class MemberLoginHandlerInterceptor extends HandlerInterceptorAdapter{
 //				return false;		
 //				
 //			}
+			
+			logger.info("MemberLoginHandlerInterceptor need to login");
 		}
 		
 		return true;

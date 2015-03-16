@@ -1,0 +1,2008 @@
+@charset "UTF-8";
+
+.banner_content {
+	width: 980px;
+	margin: 0 auto;
+	overflow: hidden;
+	white-space: nowrap;
+	text-align: left;
+}
+
+.banner_content a {
+	display: inline-block;
+	font-size: 0;
+	position: relative;
+	width: 169px;
+	height: 345px;
+	margin-left: 1px;
+	-webkit-transition: width .8s, background .5s linear 0.5s;
+	-webkit-animation: backgtrans 2s;
+	-moz-transition: width .8s, background .5s linear 0.5s;
+	-moz-animation: backgtrans 2s;
+	-ms-transition: width .8s, background .5s linear 0.5s;
+	-ms-animation: backgtrans 2s;
+	-o-transition: width .8s, background .5s linear 0.5s;
+	-o-animation: backgtrans 2s;
+	transition: width .8s, background .5s linear 0.5s;
+	animation: backgtrans 2s;
+}
+
+.banner_content a.banner_on {
+	width: 300px;
+	-webkit-transition: width 0.8s;
+	-moz-transition: width 0.8s;
+	-ms-transition: width 0.8s;
+	-o-transition: width 0.8s;
+	transition: width 0.8s;
+}
+
+.banner_content a.nomarginleft {
+	margin-left: 0;
+}
+
+@
+-webkit-keyframes backgtrans {from { opacity:0
+	
+}
+
+to {
+	opacity: 1
+}
+
+}
+@
+-moz-keyframes backgtrans {from { opacity:0
+	
+}
+
+to {
+	opacity: 1
+}
+
+}
+@
+-ms-keyframes backgtrans {from { opacity:0
+	
+}
+
+to {
+	opacity: 1
+}
+
+}
+@
+-o-keyframes backgtrans {from { opacity:0
+	
+}
+
+to {
+	opacity: 1
+}
+
+}
+@
+keyframes backgtrans {from { opacity:0
+	
+}
+
+to {
+	opacity: 1
+}
+
+}
+/*.banner_content .ms { background: #BC0068 url(../img/dacu2015_60122/ms0.jpg) no-repeat; }
+.banner_content .ms.banner_on { background-image: url(../img/dacu2015_60122/ms1.jpg); }
+.banner_content .nvz { background: #BC0068 url(../img/dacu2015_60122/nvz0.jpg) no-repeat; }
+.banner_content .nvz.banner_on { background-image: url(../img/dacu2015_60122/nvz1.jpg); }
+.banner_content .nz { background: #BC0068 url(../img/dacu2015_60122/nz0.jpg) no-repeat; }
+.banner_content .nz.banner_on { background-image: url(../img/dacu2015_60122/nz1.jpg); }
+.banner_content .yg { background: #BC0068 url(../img/dacu2015_60122/yg0.jpg) no-repeat; }
+.banner_content .yg.banner_on { background-image: url(../img/dacu2015_60122/yg1.jpg); }
+.banner_content .zr { background: #BC0068 url(../img/dacu2015_60122/zr0.jpg) no-repeat; }
+.banner_content .zr.banner_on { background-image: url(../img/dacu2015_60122/zr1.jpg); }*/
+
+/*绘制气泡和脚标*/
+.deal .con .isdacu {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	display: block;
+}
+
+.deal .con .isdacu.dacuCon1 {
+	width: 44px;
+	height: 44px;
+	background: url(../img/dacu2015q1_4thweek/deal-icon-0126.png) no-repeat;
+}
+
+.deal .con .isdacu.dacuCon2 {
+	width: 40px;
+	height: 40px;
+	background: url(../img/dacu2015q1_6thweek/deal-icon-0209.png) no-repeat;
+}
+
+.side_nav .content .bd ul li em.bubble {
+	left: 55px;
+	width: 18px;
+	height: 16px;
+	background: url(../img/dacu2015_q1_secondweek/mall-coupon.png) no-repeat
+		0 0;
+	position: absolute;
+	margin-left: -2px;
+	z-index: 100;
+	*left: 127px;
+}
+
+.side_nav .content .bd ul li em.bubble-0209 {
+	left: 55px;
+	width: 18px;
+	height: 16px;
+	background: url(../img/dacu2015q1_6thweek/mall-coupon-0209.png)
+		no-repeat 0 0;
+	position: absolute;
+	margin-left: -2px;
+	z-index: 100;
+	*left: 127px;
+}
+
+.side_nav .content .bd ul li {
+	position: relative;
+	*position: static;
+}
+
+.deal .con.dealon .isdacu.dacuCon1 {
+	top: -1px;
+	left: -1px;
+}
+
+.deal .con.dealon .isdacu.dacuCon2 {
+	top: -1px;
+	left: -1px;
+}
+
+/*#61171 新的首页样式*/
+#indexBanner61171 {
+	width: 980px;
+	_width: 982px;
+	height: 354px;
+	overflow: hidden;
+}
+
+#indexBanner61171 .lunbo {
+	float: left;
+	background-color: #eeeeee;
+	height: 343px;
+	width: 246px;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+	position: relative;
+}
+
+#indexBanner61171 .lunboWrap {
+	float: left;
+	background-color: #eeeeee;
+	height: 343px;
+	width: 246px;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+	position: relative;
+}
+
+#indexBanner61171 .lunbo li {
+	display: none;
+	font: 14px/20px "微软雅黑";
+}
+
+#indexBanner61171 .lunbo li img {
+	height: 343px;
+	width: 246px;
+	display: block;
+	float: left;
+}
+
+#indexBanner61171 .lunbo li.on {
+	display: block;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	-webkit-animation: opacityTrans 2s;
+	-moz-animation: opacityTrans 2s;
+	-o-animation: opacityTrans 2s;
+	animation: opacityTrans 2s;
+}
+/*轮播小标志*/
+.index_notice_lunbo {
+	position: absolute;
+	bottom: 8px;
+	left: 50%;
+	margin-left: -22px;
+}
+
+.index_notice_lunbo em {
+	display: block;
+	width: 16px;
+	height: 16px;
+	background: url(../img/dacu2015q1_2week/icon.png) no-repeat -18px 0px;
+	float: left;
+	margin-left: 2px;
+	cursor: pointer;
+	color: #ffffff;
+	line-height: 16px;
+}
+
+.index_notice_lunbo em.on {
+	background-position: 0px 0px;
+	-webkit-animation: opacityTrans 2s;
+	-moz-animation: opacityTrans 2s;
+	-o-animation: opacityTrans 2s;
+	animation: opacityTrans 2s;
+}
+/*右侧banner*/
+#indexBanner61171 .smallb {
+	float: left;
+	width: 734px;
+	_width: 736px;
+	height: 345px;
+}
+
+#indexBanner61171 .smallb li {
+	float: left;
+	width: 366px;
+	height: 171px;
+	border: none;
+	margin: 0px 0px 1px 1px;
+}
+
+#indexBanner61171 .smallb li img {
+	float: left;
+	width: 366px;
+	height: 171px;
+	display: block;
+	border: none;
+}
+/*#61171 新的首页样式 end*/
+
+/*61173、61172样式修改，增加tips*/
+.nianhuo {
+	position: relative;
+}
+
+.yugao-tips {
+	background: url(../img/dacu2015q1_2week/yugao-bubble.png);
+	width: 28px;
+	height: 27px;
+	display: inline-block;
+	position: absolute;
+}
+/*end*/
+
+/*61699*/
+.header .area .logo a img {
+	display: inline-block;
+}
+
+.logo-gif {
+	width: 66px;
+	height: 40px;
+	position: absolute;
+	margin-top: 7px;
+}
+/*下单领券banner和领券区*/
+#indexBanner61699 {
+	width: 980px;
+	height: 160px;
+}
+
+#indexBanner61699 .header-banner {
+	height: 191px;
+	background: url(../img/dacu2015q1_3rdweek/banner-0119.jpg) no-repeat;
+}
+
+#indexBanner61699 .getCoupon-area {
+	height: 160px;
+	width: 100%;
+}
+
+#indexBanner61699 .getCoupon-area li {
+	float: left;
+	list-style-type: none;
+	height: 160px;
+	position: relative;
+}
+
+#indexBanner61699 .getCoupon-area li a {
+	position: absolute;
+}
+
+#indexBanner61699 .getCoupon-area .coupon-area1 {
+	width: 328px;
+	background: url(../img/dacu2015q1_3rdweek/coupon-area1.png) no-repeat;
+}
+
+#indexBanner61699 .getCoupon-area .coupon-area1 .dejiang {
+	width: 110px;
+	height: 34px;
+	background: url(../img/dacu2015q1_3rdweek/dejiang-btn.png) no-repeat;
+	top: 109px;
+	left: 109px;
+}
+
+#indexBanner61699 .getCoupon-area .coupon-area2 {
+	width: 326px;
+	background: url(../img/dacu2015q1_3rdweek/coupon-area2.png) no-repeat;
+}
+
+#indexBanner61699 .getCoupon-area .coupon-area2 em {
+	width: 164px;
+	height: 25px;
+	top: 85px;
+	left: 81px;
+	position: absolute;
+	display: inline-block;
+}
+
+#indexBanner61699 .getCoupon-area .coupon-area2 .lijilingqu {
+	background: url(../img/dacu2015q1_3rdweek/lijilingqu.jpg) no-repeat;
+	cursor: pointer;
+}
+
+#indexBanner61699 .getCoupon-area .coupon-area2 .yilingqu {
+	background: url(../img/dacu2015q1_3rdweek/yilingqu.jpg) no-repeat;
+}
+
+#indexBanner61699 .getCoupon-area .coupon-area2 .lingquchenggong {
+	background: url(../img/dacu2015q1_3rdweek/lingquchenggong.jpg) no-repeat;
+}
+
+#indexBanner61699 .getCoupon-area .coupon-area2 .xitongerror {
+	background: url(../img/dacu2015q1_3rdweek/xitongerror.jpg) no-repeat;
+}
+
+#indexBanner61699 .getCoupon-area .coupon-area2 .yilingwan {
+	text-align: center;
+	height: 22px;
+	background: #ffffff;
+	color: #9e9d9d;
+	font-size: 14px;
+	font-family: "微软雅黑";
+	padding-top: 3px;
+}
+
+#indexBanner61699 .getCoupon-area .coupon-area2 .yilingwan i {
+	font-size: 12px;
+}
+
+#indexBanner61699 .getCoupon-area .coupon-area2 .yilingwan span {
+	color: #d70000;
+	font-size: 14px;
+}
+
+#indexBanner61699 .getCoupon-area .coupon-area3 {
+	width: 326px;
+	background: url(../img/dacu2015q1_3rdweek/coupon-area3.png) no-repeat;
+}
+
+#indexBanner61699 .getCoupon-area .coupon-area3 .tiaonianhuo {
+	width: 110px;
+	height: 34px;
+	background: url(../img/dacu2015q1_3rdweek/tiaonianhuo-btn.png) no-repeat;
+	top: 109px;
+	left: 109px;
+}
+/*end*/
+/*61699end*/
+
+/*福袋*/
+#dialog_popFudai {
+	height: 510px;
+	width: 500px;
+	border: none; /*border: 1px solid red;*/
+	background: none;
+}
+
+#dialog_popFudai a .close {
+	display: none;
+}
+
+#dialog_popFudai #closeFudai {
+	position: absolute;
+	top: 60px;
+	right: 45px;
+	background: url(../img/dacu2015_q1_61563/dacu61563_closebtn.png) 0 0
+		no-repeat;
+	height: 40px;
+	width: 40px;
+	cursor: pointer;
+}
+
+#dialog_popFudai .diginfo {
+	background: none;
+	border: none;
+	padding: 0px;
+}
+
+#dialog_popFudai .diginfo #balloon {
+	background: none;
+	width: 370px;
+	height: 410px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+#dialog_popFudai .diginfo #balloon img {
+	-webkit-animation: showimg 300ms ease-in-out;
+	-moz-animation: showimg 300ms ease-in-out;
+	animation: showimg 300ms ease-in-out;
+	position: absolute;
+	left: 0px;
+	cursor: pointer;
+}
+
+@
+-webkit-keyframes showimg { 0% {
+	-webkit-transform: scale(0.5);
+	top: 100px;
+	left: 100px;
+}
+
+30%
+{
+-webkit-transform
+:
+ 
+scale
+(0
+.55
+);top
+:
+70px;left
+:
+ 
+70
+px
+;
+}
+60%
+{
+-webkit-transform
+:
+ 
+scale
+(0
+.75
+);top
+:
+40px;left
+:
+ 
+40
+px
+;
+}
+90%
+{
+-webkit-transform
+:
+ 
+scale
+(0
+.9
+);top
+:
+20px;left
+:
+ 
+20
+px
+;
+}
+95%
+{
+-webkit-transform
+:
+ 
+scale
+(0
+.95
+);top
+:
+10px;left
+:
+ 
+10
+px
+;
+}
+99%
+{
+-webkit-transform
+:
+ 
+scale
+(0
+.98
+);top
+:
+4px;left
+:
+ 
+4
+px
+;
+}
+100%
+{
+-webkit-transform
+:
+ 
+scale
+(1);top
+:
+ 
+0
+px
+;left
+:
+ 
+0
+px
+;
+}
+}
+@
+-moz-keyframes showimg { 0% {
+	-moz-transform: scale(0.5);
+	top: 100px;
+	left: 100px;
+}
+
+30%
+{
+-moz-transform
+:
+ 
+scale
+(0
+.55
+);top
+:
+70px;left
+:
+ 
+70
+px
+;
+}
+60%
+{
+-moz-transform
+:
+ 
+scale
+(0
+.75
+);top
+:
+40px;left
+:
+ 
+40
+px
+;
+}
+90%
+{
+-moz-transform
+:
+ 
+scale
+(0
+.9
+);top
+:
+20px;left
+:
+ 
+20
+px
+;
+}
+95%
+{
+-moz-transform
+:
+ 
+scale
+(0
+.95
+);top
+:
+10px;left
+:
+ 
+10
+px
+;
+}
+99%
+{
+-moz-transform
+:
+ 
+scale
+(0
+.98
+);top
+:
+4px;left
+:
+ 
+4
+px
+;
+}
+100%
+{
+-moz-transform
+:
+ 
+scale
+(1);top
+:
+ 
+0
+px
+;left
+:
+ 
+0
+px
+;
+}
+}
+@
+keyframes showimg { 0% {
+	transform: scale(0.5);
+	top: 100px;
+	left: 100px;
+}
+
+30%
+{
+transform
+:
+ 
+scale
+(0
+.55
+);top
+:
+70px;left
+:
+ 
+70
+px
+;
+}
+60%
+{
+transform
+:
+ 
+scale
+(0
+.75
+);top
+:
+40px;left
+:
+ 
+40
+px
+;
+}
+90%
+{
+transform
+:
+ 
+scale
+(0
+.9
+);top
+:
+20px;left
+:
+ 
+20
+px
+;
+}
+95%
+{
+transform
+:
+ 
+scale
+(0
+.95
+);top
+:
+10px;left
+:
+ 
+10
+px
+;
+}
+99%
+{
+transform
+:
+ 
+scale
+(0
+.98
+);top
+:
+4px;left
+:
+ 
+4
+px
+;
+}
+100%
+{
+transform
+:
+ 
+scale
+(1);top
+:
+ 
+0
+px
+;left
+:
+ 
+0
+px
+;
+}
+}
+#dialog_popFudai .diginfo #clicktip {
+	background: none;
+	width: 187px;
+	height: 141px;
+	position: absolute;
+	top: 305px;
+	right: 30px;
+	z-index: 99;
+}
+
+#dialog_popFudai .diginfo #clicktip img {
+	-webkit-animation: toshowtip 200ms ease-in-out forwards;
+	-moz-animation: toshowtip 200ms ease-in-out forwards;
+	animation: toshowtip 200ms ease-in-out forwards;
+	animation-delay: 2s;
+	-webkit-animation-delay: 2s;
+	transform: scale(0);
+	transform: scale(1) \9\0;
+	cursor: pointer;
+}
+
+@
+-webkit-keyframes toshowtip { 0% {
+	-webkit-transform: scale(0);
+}
+
+30%
+{
+-webkit-transform
+:
+ 
+scale
+(0
+.3
+);
+}
+60%
+{
+-webkit-transform
+:
+ 
+scale
+(0
+.6
+);
+}
+90%
+{
+-webkit-transform
+:
+ 
+scale
+(0
+.9
+);
+}
+100%
+{
+-webkit-transform
+:
+ 
+scale
+(1)
+}
+}
+@
+-moz-keyframes toshowtip { 0% {
+	-moz-transform: scale(0);
+}
+
+30%
+{
+-moz-transform
+:
+ 
+scale
+(0
+.3
+);
+}
+60%
+{
+-moz-transform
+:
+ 
+scale
+(0
+.6
+);
+}
+90%
+{
+-moz-transform
+:
+ 
+scale
+(0
+.9
+);
+}
+100%
+{
+-moz-transform
+:
+ 
+scale
+(1)
+}
+}
+@
+keyframes toshowtip { 0% {
+	transform: scale(0);
+}
+
+30%
+{
+transform
+:
+ 
+scale
+(0
+.3
+);
+}
+60%
+{
+transform
+:
+ 
+scale
+(0
+.6
+);
+}
+90%
+{
+transform
+:
+ 
+scale
+(0
+.9
+);
+}
+100%
+{
+transform
+:
+ 
+scale
+(1)
+}
+}
+#dialog_popFudai .diginfo #giftbox {
+	background: none;
+	width: 226px;
+	height: 128px;
+	position: absolute;
+	top: 355px;
+	left: 155px;
+}
+
+#dialog_popFudai .diginfo #giftbox img {
+	animation: shockImg 300ms ease-in-out;
+	-webkit-animation: shockImg 300ms ease-in-out;
+	animation-delay: 1s;
+	-webkit-animation-delay: 1s;
+	cursor: pointer;
+}
+
+@
+keyframes shockImg { 0% {
+	transform: rotate(10deg);
+}
+
+30%
+{
+transform
+:
+ 
+rotate
+(0deg);
+}
+60%
+{
+transform
+:
+ 
+rotate
+(-10deg);
+}
+90%
+{
+transform
+:
+ 
+rotate
+(10deg);
+}
+100%
+{
+transform
+:
+ 
+rotate
+(0deg);
+}
+}
+@
+-webkit-keyframes shockImg { 0% {
+	transform: rotate(10deg);
+}
+
+30%
+{
+transform
+:
+ 
+rotate
+(0deg);
+}
+60%
+{
+transform
+:
+ 
+rotate
+(-10deg);
+}
+90%
+{
+transform
+:
+ 
+rotate
+(10deg);
+}
+100%
+{
+transform
+:
+ 
+rotate
+(0deg);
+}
+}
+@
+-webkit-keyframes shockImg { 0% {
+	transform: rotate(10deg);
+}
+
+30%
+{
+transform
+:
+ 
+rotate
+(0deg);
+}
+60%
+{
+transform
+:
+ 
+rotate
+(-10deg);
+}
+90%
+{
+transform
+:
+ 
+rotate
+(10deg);
+}
+100%
+{
+transform
+:
+ 
+rotate
+(0deg);
+}
+}
+
+/*浮窗*/
+/*已领过弹窗样式*/
+#dialog_popYiling, #dialog_popSuccess, #dialog_popEroor {
+	border: 3px solid #d30227;
+	width: 344px;
+	height: 178px;
+	font-family: "微软雅黑";
+	background: #ffffff;
+}
+
+#dialog_popYiling a, #dialog_popSuccess a {
+	width: 105px;
+	height: 39px;
+	display: inline-block;
+}
+
+#dialog_popYiling .diginfo, #dialog_popSuccess .diginfo,
+	#dialog_popEroor .diginfo {
+	height: inherit;
+	border: none;
+	text-align: center;
+}
+
+#dialog_popYiling .close, #dialog_popSuccess .close, #dialog_popEroor .close
+	{
+	width: 33px;
+	height: 33px;
+	background: url(../img/dacu2015q1_4thweek/dialog-Button.png) -115px
+		-91px no-repeat;
+	top: 0px;
+	right: 0px;
+}
+
+#dialog_popYiling .Yiling-notice {
+	color: #d30227;
+	font-size: 16px;
+	position: relative;
+	top: 12px;
+}
+
+#viewNow {
+	background: url(../img/dacu2015q1_4thweek/dialog-Button.png) 0 0
+		no-repeat;
+	position: relative;
+	top: 32px;
+	left: -15px;
+}
+
+#goShopping {
+	background: url(../img/dacu2015q1_4thweek/dialog-Button.png) -115px 0px
+		no-repeat;
+	position: relative;
+	top: 32px;
+	left: 10px;
+}
+/*成功领取弹窗样式*/
+#dialog_popSuccess h1 {
+	font-size: 24px;
+	color: #d30227;
+	position: relative;
+	top: -27px;
+}
+
+#dialog_popSuccess span.main-content {
+	color: #fe7935;
+	font-size: 16px;
+	position: relative;
+	top: -22px;
+}
+
+#dialog_popSuccess span.warning-notice {
+	color: #e82528;
+	position: relative;
+	bottom: -7px;
+	left: -94px;
+	display: inline-block;
+}
+
+#dialog_popSuccess span em {
+	font-size: 18px;
+	color: #d30227;
+}
+
+#useNow {
+	background: url(../img/dacu2015q1_4thweek/dialog-Button.png) 0px -45px
+		no-repeat;
+	position: relative;
+	top: -9px;
+	left: -15px;
+}
+
+#showCoupon {
+	background: url(../img/dacu2015q1_4thweek/dialog-Button.png) -115px
+		-45px no-repeat;
+	position: relative;
+	top: -9px;
+	left: 10px;
+}
+/*接口宕掉时弹窗样式*/
+#dialog_popEroor {
+	text-align: center;
+}
+
+#dialog_popEroor span.error-notice {
+	color: #d30227;
+	font-size: 16px;
+	position: relative;
+	top: 47px;
+}
+
+#dialog_popEroor a.close {
+	width: 105px;
+	height: 39px;
+	display: inline-block;
+	background: url(../img/dacu2015q1_4thweek/dialog-Button.png) 0px -91px
+		no-repeat;
+	position: relative;
+	top: 64px;
+}
+
+/*20150209-20150211banner*/
+.dacuBannerWeek6 {
+	display: block;
+	overflow: hidden;
+	height: 350px;
+}
+
+.dacuBannerWeek6 div a {
+	width: 980px;
+	margin: 0 auto;
+	display: inline-block;
+	height: 100%;
+}
+
+.dacuBannerWeek6 div.banner_top_0209 {
+	background: url(../img/dacu2015q1_6thweek/banner_top_0209.jpg) center
+		center no-repeat;
+	height: 86px;
+}
+
+.dacuBannerWeek6 div.banner_middle_0209 {
+	background: url(../img/dacu2015q1_6thweek/banner_middle_0209.jpg) center
+		center no-repeat;
+	height: 164px;
+	position: relative;
+}
+
+.dacuBannerWeek6 div.banner_middle_0209 a {
+	float: left;
+	width: 490px;
+	position: absolute;
+}
+
+.dacuBannerWeek6 div.banner_middle_0209 a.qingrenjie0209 {
+	right: 50%;
+}
+
+.dacuBannerWeek6 div.banner_middle_0209 a.nianhuo0209 {
+	left: 50%;
+}
+
+.dacuBannerWeek6 div.banner_bottom_0209 {
+	background: url(../img/dacu2015q1_6thweek/banner_bottom_0209.jpg) center
+		center no-repeat;
+	height: 100px;
+}
+/*end*/
+/*20150212-20150215banner*/
+.dacuBanner0212 {
+	display: block;
+	overflow: hidden;
+	height: 350px;
+}
+
+.dacuBanner0212 div a {
+	width: 980px;
+	margin: 0 auto;
+	display: inline-block;
+	height: 100%;
+}
+
+.dacuBanner0212 div.banner_0212_top {
+	background: url(../img/dacu2015q1_6thweek/banner_0212_top_new.jpg)
+		center center no-repeat;
+	height: 250px;
+}
+
+.dacuBanner0212 div.banner_0212_bottom {
+	background: url(../img/dacu2015q1_6thweek/banner_0212_bottom_new.jpg)
+		center center no-repeat;
+	height: 100px;
+}
+/*end*/
+.side_nav.affix.bannerSideNavJudge {
+	top: 0px !important;
+}
+
+.righticonnav {
+	position: fixed;
+	left: 50%;
+	bottom: 35%;
+	display: block;
+	margin-left: 490px;
+}
+
+.righticonnav .close_right_icon {
+	display: block;
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	right: -2px;
+	top: -3px;
+	z-index: 1000;
+	filter: alpha(opacity = 35);
+	background: #FFF;
+	opacity: 0;
+}
+/*20150305右侧导航*/
+#dacu0305Nav {
+	width: 142px;
+	position: absolute;
+	top: 391px;
+	left: 49%;
+	z-index: 999;
+	text-align: center;
+	visibility: hidden;
+}
+
+#dacu0305Nav.affix {
+	left: 50%;
+	bottom: 35%;
+	display: block;
+	margin-left: 500px;
+	text-align: center;
+}
+
+#dacu0305Nav.affix {
+	top: 0px;
+	position: fixed;
+	visibility: visible;
+	-webkit-animation: showin 500ms ease-in-out;
+	-moz-animation: showin 500ms ease-in-out;
+	animation: showin 500ms ease-in-out;
+}
+
+@
+-webkit-keyframes showin { 0% {
+	-webkit-transform: scale(0);
+}
+
+40%
+{
+-webkit-transform
+:
+ 
+scale
+(0
+.3
+);
+}
+60%
+{
+-webkit-transform
+:
+ 
+scale
+(0
+.6
+);
+}
+80%
+{
+-webkit-transform
+:
+ 
+scale
+(0
+.9
+);
+}
+90%
+{
+-webkit-transform
+:
+ 
+scale
+(1);
+}
+100%
+{
+-webkit-transform
+:
+ 
+scale
+(1);
+}
+}
+@
+-moz-keyframes showin { 0% {
+	-moz-transform: scale(0);
+}
+
+40%
+{
+-moz-transform
+:
+ 
+scale
+(0
+.3
+);
+}
+60%
+{
+-moz-transform
+:
+ 
+scale
+(0
+.6
+);
+}
+80%
+{
+-moz-transform
+:
+ 
+scale
+(0
+.9
+);
+}
+90%
+{
+-moz-transform
+:
+ 
+scale
+(1);
+}
+100%
+{
+-moz-transform
+:
+ 
+scale
+(1);
+}
+}
+@
+keyframes showin { 0% {
+	transform: scale(0);
+}
+
+40%
+{
+transform
+:
+ 
+scale
+(0
+.3
+);
+}
+60%
+{
+transform
+:
+ 
+scale
+(0
+.6
+);
+}
+80%
+{
+transform
+:
+ 
+scale
+(0
+.9
+);
+}
+90%
+{
+transform
+:
+ 
+scale
+(1);
+}
+100%
+{
+transform
+:
+ 
+scale
+(1);
+}
+}
+#dacu0305Nav {
+	border: none;
+}
+
+#dacu0305Nav .rightNav_li {
+	width: 128px;
+	height: 40px;
+	display: block;
+	background: url(../img/dacu2015q1_9thweek/right_0305_icon.png);
+	outline: none;
+	margin: 0 auto;
+}
+
+#dacu0305Nav .rightNav_li.yuanxiao0305 {
+	background-position: 0px 0px;
+	height: 32px;
+}
+
+#dacu0305Nav .rightNav_li.nvsheng0305 {
+	background-position: 0px -57px;
+}
+
+#dacu0305Nav .rightNav_li.nvshen0305 {
+	background-position: 0px -122px;
+}
+
+#dacu0305Nav .rightNav_li.kuai90305 {
+	background-position: 0px -187px;
+}
+
+#dacu0305Nav .rightNav_li.rightNav_li_top {
+	height: 58px;
+	background-position: -138px 0px;
+	width: 142px;
+}
+
+#dacu0305Nav .rightNav_li.rightNav_li_bottom {
+	height: 26px;
+	background-position: -138px -122px;
+	width: 103px;
+}
+
+#dacu0305Nav.side_nav {
+	background: none;
+}
+/*end*/
+/*20150306右侧导航 时间：03月06日00:00~03月08日24:00*/
+#dacu0306Nav {
+	width: 128px;
+	position: absolute;
+	top: 391px;
+	left: 49%;
+	z-index: 999;
+	text-align: center;
+	visibility: hidden;
+}
+
+#dacu0306Nav.affix {
+	left: 50%;
+	bottom: 35%;
+	display: block;
+	margin-left: 500px;
+	text-align: center;
+}
+
+#dacu0306Nav.affix {
+	top: 0px;
+	position: fixed;
+	visibility: visible;
+	-webkit-animation: showin 500ms ease-in-out;
+	-moz-animation: showin 500ms ease-in-out;
+	animation: showin 500ms ease-in-out;
+}
+
+@
+-webkit-keyframes showin { 0% {
+	-webkit-transform: scale(0);
+}
+
+40%
+{
+-webkit-transform
+:
+ 
+scale
+(0
+.3
+);
+}
+60%
+{
+-webkit-transform
+:
+ 
+scale
+(0
+.6
+);
+}
+80%
+{
+-webkit-transform
+:
+ 
+scale
+(0
+.9
+);
+}
+90%
+{
+-webkit-transform
+:
+ 
+scale
+(1);
+}
+100%
+{
+-webkit-transform
+:
+ 
+scale
+(1);
+}
+}
+@
+-moz-keyframes showin { 0% {
+	-moz-transform: scale(0);
+}
+
+40%
+{
+-moz-transform
+:
+ 
+scale
+(0
+.3
+);
+}
+60%
+{
+-moz-transform
+:
+ 
+scale
+(0
+.6
+);
+}
+80%
+{
+-moz-transform
+:
+ 
+scale
+(0
+.9
+);
+}
+90%
+{
+-moz-transform
+:
+ 
+scale
+(1);
+}
+100%
+{
+-moz-transform
+:
+ 
+scale
+(1);
+}
+}
+@
+keyframes showin { 0% {
+	transform: scale(0);
+}
+
+40%
+{
+transform
+:
+ 
+scale
+(0
+.3
+);
+}
+60%
+{
+transform
+:
+ 
+scale
+(0
+.6
+);
+}
+80%
+{
+transform
+:
+ 
+scale
+(0
+.9
+);
+}
+90%
+{
+transform
+:
+ 
+scale
+(1);
+}
+100%
+{
+transform
+:
+ 
+scale
+(1);
+}
+}
+#dacu0306Nav {
+	border: none;
+}
+
+#dacu0306Nav .rightNav_li {
+	width: 128px;
+	height: 40px;
+	display: block;
+	background: url(../img/dacu2015q1_9thweek/right_0306_icon.png);
+	outline: none;
+}
+
+#dacu0306Nav .rightNav_li:hover {
+	width: 128px;
+	height: 40px;
+	display: block;
+	background: url(../img/dacu2015q1_9thweek/right_0306_icon_hover.png);
+	outline: none;
+}
+
+#dacu0306Nav .rightNav_li.nvsheng0306 {
+	background-position: 0px 0px;
+	height: 32px;
+}
+
+#dacu0306Nav .rightNav_li:hover.nvsheng0306 {
+	background-position: 0px 0px;
+}
+
+#dacu0306Nav .rightNav_li.nvshen0306 {
+	background-position: 0px -62px;
+}
+
+#dacu0306Nav .rightNav_li:hover.nvshen0306 {
+	background-position: 0px -62px;
+}
+
+#dacu0306Nav .rightNav_li.koubei0306 {
+	background-position: 0px -132px;
+}
+
+#dacu0306Nav .rightNav_li:hover.koubei0306 {
+	background-position: 0px -132px;
+}
+
+#dacu0306Nav .rightNav_li.kuai90306 {
+	background-position: 0px -202px;
+}
+
+#dacu0306Nav .rightNav_li:hover.kuai90306 {
+	background-position: 0px -202px;
+}
+
+#dacu0306Nav .rightNav_li.rightNav_li_top {
+	height: 78px;
+	background-position: -152px 0px;
+}
+
+#dacu0306Nav .rightNav_li:hover.rightNav_li_top {
+	height: 78px;
+	background-position: -152px 0px;
+}
+
+#dacu0306Nav .rightNav_li.rightNav_li_bottom {
+	height: 26px;
+	background-position: -152px -132px;
+	width: 103px;
+	margin: 0 auto;
+}
+
+#dacu0306Nav .rightNav_li:hover.rightNav_li_bottom {
+	height: 26px;
+	background-position: -152px -132px;
+	width: 103px;
+	margin: 0 auto;
+}
+
+#dacu0306Nav.side_nav {
+	background: none;
+}
+/*end*/
+/*20150309右侧导航 时间：03月09日00:00~03月15日24:00*/
+#dacu0309Nav {
+	width: 140px;
+	position: absolute;
+	top: 391px;
+	left: 49%;
+	z-index: 999;
+	text-align: center;
+	visibility: hidden;
+}
+
+#dacu0309Nav.affix {
+	left: 50%;
+	bottom: 35%;
+	display: block;
+	margin-left: 500px;
+	text-align: center;
+}
+
+#dacu0309Nav.affix {
+	top: 0px;
+	position: fixed;
+	visibility: visible;
+	-webkit-animation: showin 500ms ease-in-out;
+	-moz-animation: showin 500ms ease-in-out;
+	animation: showin 500ms ease-in-out;
+}
+
+@
+-webkit-keyframes showin { 0% {
+	-webkit-transform: scale(0);
+}
+
+40%
+{
+-webkit-transform
+:
+ 
+scale
+(0
+.3
+);
+}
+60%
+{
+-webkit-transform
+:
+ 
+scale
+(0
+.6
+);
+}
+80%
+{
+-webkit-transform
+:
+ 
+scale
+(0
+.9
+);
+}
+90%
+{
+-webkit-transform
+:
+ 
+scale
+(1);
+}
+100%
+{
+-webkit-transform
+:
+ 
+scale
+(1);
+}
+}
+@
+-moz-keyframes showin { 0% {
+	-moz-transform: scale(0);
+}
+
+40%
+{
+-moz-transform
+:
+ 
+scale
+(0
+.3
+);
+}
+60%
+{
+-moz-transform
+:
+ 
+scale
+(0
+.6
+);
+}
+80%
+{
+-moz-transform
+:
+ 
+scale
+(0
+.9
+);
+}
+90%
+{
+-moz-transform
+:
+ 
+scale
+(1);
+}
+100%
+{
+-moz-transform
+:
+ 
+scale
+(1);
+}
+}
+@
+keyframes showin { 0% {
+	transform: scale(0);
+}
+
+40%
+{
+transform
+:
+ 
+scale
+(0
+.3
+);
+}
+60%
+{
+transform
+:
+ 
+scale
+(0
+.6
+);
+}
+80%
+{
+transform
+:
+ 
+scale
+(0
+.9
+);
+}
+90%
+{
+transform
+:
+ 
+scale
+(1);
+}
+100%
+{
+transform
+:
+ 
+scale
+(1);
+}
+}
+#dacu0309Nav {
+	border: none;
+}
+
+#dacu0309Nav .rightNav_li {
+	width: 127px;
+	height: 40px;
+	display: block;
+	background: url(../img/dacu2015q1_10thweek/right_0309_icon.png);
+	outline: none;
+	margin: 0 auto;
+}
+
+#dacu0309Nav .rightNav_li.shunv0309 {
+	background-position: 0px 0px;
+	height: 32px;
+}
+
+#dacu0309Nav .rightNav_li.xingnan0309 {
+	background-position: 0px -52px;
+}
+
+#dacu0309Nav .rightNav_li.xiaoqingren0309 {
+	background-position: 0px -112px;
+}
+
+#dacu0309Nav .rightNav_li.jianfei0309 {
+	background-position: 0px -172px;
+}
+
+#dacu0309Nav .rightNav_li.changxian0309 {
+	background-position: 0px -233px;
+}
+
+#dacu0309Nav .rightNav_li.rightNav_li_top {
+	height: 58px;
+	background-position: -145px -13px;
+	width: 134px;
+	margin-left: 0;
+}
+
+#dacu0309Nav .rightNav_li.rightNav_li_bottom {
+	height: 26px;
+	background-position: -145px -112px;
+	width: 103px;
+}
+
+#dacu0309Nav.side_nav {
+	background: none;
+}
+/*end*/

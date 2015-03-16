@@ -34,11 +34,10 @@ import com.korres.system.user.util.AppUtil;
 import com.korres.system.user.util.Const;
 import com.korres.system.user.util.FileDownload;
 import com.korres.system.user.util.FileUpload;
-import com.korres.system.user.util.GetPinyin;
 import com.korres.system.user.util.MD5;
 import com.korres.system.user.util.ObjectExcelRead;
-import com.korres.system.user.util.PageData;
 import com.korres.system.user.util.ObjectExcelView;
+import com.korres.system.user.util.PageData;
 import com.korres.system.user.util.PathUtil;
 import com.korres.system.user.util.Tools;
 
@@ -58,7 +57,6 @@ public class UserController extends BaseController {
 	private RoleService roleService;
 	@Resource(name="menuService")
 	private MenuService menuService;
-	
 	
 	/**
 	 * 保存用户
@@ -454,10 +452,10 @@ public class UserController extends BaseController {
 			for(int i=0;i<listPd.size();i++){		
 				pd.put("USER_ID", this.get32UUID());										//ID
 				pd.put("NAME", listPd.get(i).getString("var1"));							//姓名
-				pd.put("USERNAME", GetPinyin.getPingYin(listPd.get(i).getString("var1")));	//根据姓名汉字生成全拼
-				if(userService.findByUId(pd) != null){										//判断用户名是否重复
-					pd.put("USERNAME", GetPinyin.getPingYin(listPd.get(i).getString("var1"))+Tools.getRandomNum());
-				}
+//				pd.put("USERNAME", GetPinyin2.getPingYin(listPd.get(i).getString("var1")));	//根据姓名汉字生成全拼
+//				if(userService.findByUId(pd) != null){										//判断用户名是否重复
+//					pd.put("USERNAME", GetPinyin2.getPingYin(listPd.get(i).getString("var1"))+Tools.getRandomNum());
+//				}
 				pd.put("BZ", listPd.get(i).getString("var4"));								//备注
 				if(Tools.checkEmail(listPd.get(i).getString("var3"))){						//邮箱格式不对就跳过
 					pd.put("EMAIL", listPd.get(i).getString("var3"));						

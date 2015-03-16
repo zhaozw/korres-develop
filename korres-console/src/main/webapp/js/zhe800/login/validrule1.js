@@ -1,0 +1,2 @@
+(function(a){a.extend(tuanpub,{verification:{mobile:function(c){var e=this,d=a.trim(c),b={status:1,msg:""};if(d==""){b.status=1;b.msg="手机号码为空";return b;
+}if(!/^1\d{10}$/.test(d)){b.status=2;b.msg="手机号码格式错误";return b;}b.status=0;b.msg="手机号码正确";return b;}}});})(jQuery);
